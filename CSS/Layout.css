@@ -5,11 +5,22 @@
     background-color: #DCD7D0; 
     margin-top: 0.5%;
     position: static;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 .bordered{
     border: solid 1px #FFFFFF;
     border-radius: 23px;
+}
+.vertical-text{
+    margin-left: 1rem;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    justify-content: center;
+    /*Без переноса строки*/
+    white-space: nowrap;
+    color:#FFF;
+    display: inline-block;
+    
 }
 @media (max-width: 720px) {
     .circle{
@@ -17,5 +28,8 @@
     }
     .navbar-wrapper {
         width: 100% !important;
+    }
+    .vertical-text{
+        display: none;
     }
 }
