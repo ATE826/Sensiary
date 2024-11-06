@@ -1,0 +1,19 @@
+.circle {
+    width: 20px;         
+    height: 20px;
+    border-radius: 50%;
+    background-color: #DCD7D0; 
+    margin-top: 0.5%;
+    position: static;
+}
+.header-nav{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, auto);
+}
+@media (max-width: 767px) {
+    .header-nav{
+        grid-template-columns: 1fr; /* Один столбец */
+        grid-template-rows: repeat(2, auto); /* Два ряда */
+        gap: 10px; /* Промежуток между элементами */
+    }
+}
