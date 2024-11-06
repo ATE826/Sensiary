@@ -23,7 +23,7 @@
     display: inline-block;   
 }
 #text{
-    margin-left: 7rem;
+    margin-left: 6rem;
 }
 @media (max-width: 720px) {
     .circle{
@@ -34,5 +34,8 @@
     }
     #main{
         display: none !important;
+    }
+    #text{
+        margin-left: 1.5rem;
     }
 }
