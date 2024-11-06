@@ -13,6 +13,7 @@
 }
 .vertical-text{
     margin-left: 1rem;
+    margin-top: 50rem;
     transform: rotate(-90deg);
     transform-origin: center;
     justify-content: center;
@@ -29,7 +30,7 @@
     .navbar-wrapper {
         width: 100% !important;
     }
-    .vertical-text{
-        display: none;
+    #main{
+        display: none !important;
     }
 }
