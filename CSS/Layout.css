@@ -15,10 +15,6 @@
     .circle{
         margin-left: 0rem;
     }
-    header .row {
-        display: flex !important;
-        flex-direction: column !important;
-    }
     .navbar-wrapper {
         width: 100% !important;
     }
