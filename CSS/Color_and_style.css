@@ -19,3 +19,7 @@ h1{
     font-family: 'Unbounded', sans-serif;
     font-size: xxx-large !important;
 }
+#emotion-text{
+    color: #FFF;
+    text-shadow: 0px 0px 50px #FFF;
+}

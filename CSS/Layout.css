@@ -1,3 +1,6 @@
+main{
+    z-index: 1;
+}
 .circle {
     width: 20px !important;         
     height: 20px !important;
@@ -22,8 +25,44 @@
     color:#FFF;
     display: inline-block;   
 }
+.img-container {
+    position: relative;
+    background-image: url('Img/Wave.png'); /* Путь к вашему PNG */
+    background-size: 100rem;  /* Чтобы изображение растягивалось по экрану */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    background-position: 45rem -12rem;
+}
+.img-container background-image{
+    opacity: 30%;
+}
+
 #text{
     margin-left: 6rem;
+}
+@media (max-width: 2561px) {
+    .img-container{
+        background-position: 50rem -12rem;
+    }
+}
+@media (max-width: 1601px) {
+    .img-container{
+        background-position: 40rem -12rem;
+    }
+}
+@media (max-width: 1281px) {
+    .img-container{
+        background-position: 30rem -12rem;
+    }
+}
+@media (max-width: 1025px) {
+    .img-container{
+        background-position: 20rem -12rem;
+    }
+}
+@media (max-width: 821px) {
+    .img-container{
+        background-position: 10rem -12rem;
+    }
 }
 @media (max-width: 720px) {
     .circle{
@@ -37,5 +76,13 @@
     }
     #text{
         margin-left: 1.5rem;
+    }
+    .img-container{
+        background-position: 0rem -12rem;
+    }
+}
+@media (max-width: 640px) {
+    .img-container{
+        background-position: -10rem -12rem;
     }
 }
