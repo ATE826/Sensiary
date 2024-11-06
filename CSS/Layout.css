@@ -20,8 +20,10 @@
     /*Без переноса строки*/
     white-space: nowrap;
     color:#FFF;
-    display: inline-block;
-    
+    display: inline-block;   
+}
+#text{
+    margin-left: 7rem;
 }
 @media (max-width: 720px) {
     .circle{

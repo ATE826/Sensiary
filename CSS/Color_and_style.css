@@ -7,9 +7,15 @@ html body{
     background-color: var(--bg-color);
 }
 p{
-    color: var(--text-color)
+    color: var(--text-color);
+    font-family: 'Unbounded', sans-serif;
 }
 a{
     text-decoration: none !important;
     color: var(--text-color) !important;
+}
+h1{
+    color: var(--accent-text-color) !important;   
+    font-family: 'Unbounded', sans-serif;
+    font-size: xxx-large !important;
 }
