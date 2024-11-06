@@ -6,3 +6,10 @@
 html body{
     background-color: var(--bg-color);
 }
+p{
+    color: var(--text-color)
+}
+a{
+    text-decoration: none !important;
+    color: var(--text-color) !important;
+}

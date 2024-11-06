@@ -1,8 +1,25 @@
 .circle {
-    width: 20px;         
-    height: 20px;
+    width: 20px !important;         
+    height: 20px !important;
     border-radius: 50%;
     background-color: #DCD7D0; 
     margin-top: 0.5%;
     position: static;
+    margin-left: 3rem;
+}
+.bordered{
+    border: solid 1px #FFFFFF;
+    border-radius: 23px;
+}
+@media (max-width: 720px) {
+    .circle{
+        margin-left: 0rem;
+    }
+    header .row {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .navbar-wrapper {
+        width: 100% !important;
+    }
 }
