@@ -6,14 +6,3 @@
 html body{
     background-color: var(--bg-color);
 }
-a{
-    text-decoration: none !important;
-    color: var(--text-color) !important;
-}
-p{
-    color: var(--text-color);
-}
-.bordered{
-    border: solid 1px var(--text-color);
-    border-radius: 33px;
-}
