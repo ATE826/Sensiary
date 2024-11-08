@@ -28,7 +28,7 @@ body{
     background-size: cover;
 }
 #text{
-    margin-left: 3rem;
+    margin-left: 2.5rem;
 }
 @media (max-width: 2561px) {
     .img-container{
