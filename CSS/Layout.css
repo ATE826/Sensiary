@@ -1,3 +1,61 @@
+body{
+    background-image: url('Img/Wave.png'); /* Путь к вашему PNG */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    background-size: cover;
+}
+.button {
+    color: var(--text-color);
+    font-family: 'Unbounded', sans-serif;
+    margin-left: 1.75rem;
+    background-image: linear-gradient(to right, #16267D, #6E2257);
+    border-radius: 20px;
+    height: 3rem;
+    width: 14rem;
+    border: none; /* Установите начальную толщину границы */
+    box-shadow: 0px 0px 0px 0px var(--text-color);
+    transition: box-shadow 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+.button:hover {
+    box-shadow: 0px 0px 0px 2px var(--text-color); /* Задаем цвет границы при наведении */
+}
+.point-num{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    height: 64px;
+    width: 64px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #16267D, #6E2257);
+    font-size: 20pt !important;
+}
+.point-text{
+    display: flex;
+    justify-content: center;
+    height: 285.55px;
+    width: 435px;
+    border-radius: 20px;
+    background: #181E3D;
+    box-shadow: 0px 2px 3px #000000;
+    font-size: 20pt !important;
+}
+.point-text-head{
+    display: flex;
+    justify-content: center;
+    height: 129.26px;
+    width: 435px;
+    border-radius: 20px;
+    background: #1F264A;
+    box-shadow: 0px 2px 3px #000000;
+    font-size: 20pt !important;
+}
+.text-in-point{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: lighter;
+}
 .circle {
     width: 20px !important;         
     height: 20px !important;
@@ -9,11 +67,12 @@
 }
 .bordered{
     border: solid 1px #FFFFFF;
-    border-radius: 23px;
+    border-radius: 20px;
 }
 .vertical-text{
     margin-left: 1rem;
-    margin-top: 50rem;
+    margin-top: 10rem;
+    position: relative;
     transform: rotate(-90deg);
     transform-origin: center;
     justify-content: center;
@@ -22,38 +81,14 @@
     color:#FFF;
     display: inline-block;   
 }
-body{
-    background-image: url('Img/Wave.png'); /* Путь к вашему PNG */
-    background-repeat: no-repeat; /* Запрещает повторение изображения */
-    background-size: cover;
-}
 #text{
-    margin-left: 2.5rem;
+    margin-left: 4rem;
 }
-@media (max-width: 2561px) {
-    .img-container{
-        background-position: 50rem -12rem;
-    }
+#main-text{
+    margin-top: 10rem;
 }
-@media (max-width: 1601px) {
-    .img-container{
-        background-position: 40rem -12rem;
-    }
-}
-@media (max-width: 1281px) {
-    .img-container{
-        background-position: 30rem -12rem;
-    }
-}
-@media (max-width: 1025px) {
-    .img-container{
-        background-position: 20rem -12rem;
-    }
-}
-@media (max-width: 821px) {
-    .img-container{
-        background-position: 10rem -12rem;
-    }
+#main-point{
+    margin-top: 15rem;
 }
 @media (max-width: 720px) {
     body{
@@ -65,18 +100,19 @@ body{
     .navbar-wrapper {
         width: 100% !important;
     }
+    .img-container{
+        background-position: 0rem -12rem;
+    }
+    /*.point .row .col .row{
+        
+    }*/
     #main{
         display: none !important;
     }
     #text{
         margin-left: 1.5rem;
     }
-    .img-container{
-        background-position: 0rem -12rem;
-    }
-}
-@media (max-width: 640px) {
-    .img-container{
-        background-position: -10rem -12rem;
+    #text{
+        margin-left: 0rem;
     }
 }
