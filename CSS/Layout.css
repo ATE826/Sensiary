@@ -71,8 +71,8 @@ body{
 }
 .vertical-text{
     margin-left: 1rem;
-    margin-top: 10rem;
-    position: relative;
+    margin-top: 17rem;
+    position: absolute;
     transform: rotate(-90deg);
     transform-origin: center;
     justify-content: center;
