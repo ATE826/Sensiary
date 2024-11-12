@@ -90,6 +90,11 @@ body{
 #main-point{
     margin-top: 15rem;
 }
+#line{
+    width: 100%;
+    height: 55px;
+    background-color: rgba(65, 74, 82, 0.5);
+}
 @media (max-width: 720px) {
     body{
         background-image: url('Img/Wave_smallscreen.png'); /* Путь к вашему PNG */
