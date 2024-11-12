@@ -103,9 +103,9 @@ body{
     .img-container{
         background-position: 0rem -12rem;
     }
-    /*.point .row .col .row{
-        
-    }*/
+    .point{
+        margin-bottom: 3rem;
+    }
     #main{
         display: none !important;
     }
@@ -115,4 +115,8 @@ body{
     #text{
         margin-left: 0rem;
     }
+    #point-container{
+        margin-left: 0rem !important;
+    }
+    
 }

@@ -32,22 +32,26 @@
     </div>
     
     <div class="container-fluid mt-5"style="height: 3010px;">
-        <main class="row content">
-            <div id="main" style="width: 10rem;">
-                <div class="col-1 d-flex justify-content-center align-items-center vertical-text" >ГЛАВНОЕ</div>
-            </div>       
-            <div class="col container-fluid" id="text">
-                <h1 class="mb-5">Дневник<br><span id="emotion-text">эмоций</span><br>для Вас</h1>
-                <div id="main-text">
-                    <p>Сайт, который позволит вам<br>следить за вашим<br>эмоциональным состоянием</p>
-                    <button class="button">Демоверсия</button>
+        <main class="container-fluid">
+            <div class="row">
+                <div id="main" style="width: 10rem;">
+                    <div class="col-1 d-flex justify-content-center align-items-center vertical-text" >ГЛАВНОЕ</div>
+                </div>       
+                <div class="col container-fluid" id="text">
+                    <h1 class="mb-5">Дневник<br><span id="emotion-text">эмоций</span><br>для Вас</h1>
+                    <div id="main-text">
+                        <p>Сайт, который позволит вам<br>следить за вашим<br>эмоциональным состоянием</p>
+                        <button class="button">Демоверсия</button>
+                    </div> 
                 </div>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center ms-5" id="point-container">
                 <div id="main-point">
                     <h2>Мы поможем познать себя</h2>
                     <div class="container-fluid points">
                         <div class="row mt-5">
                             <!--Левый верхний-->
-                            <div class="col">
+                            <div class="col point">
                                 <div class="row">
                                     <div class="col-2"><div class="point-num"><p>1</p></div></div>
                                     <div class="col">
@@ -75,7 +79,7 @@
                                                 <div class="point-text-head">
                                                     <div class="row">
                                                         <div class="col-3 d-flex align-items-center justify-content-center"><img class="ms-4 mb-3" src="CSS/Img/PointPict2.png" alt=""></div>
-                                                        <div class="col d-flex align-items-center justify-content-center"><p>Отмечайте свои эмоции</p></div>
+                                                        <div class="col d-flex align-items-center justify-content-center"><p>Эмоции по тегам и категориям</p></div>
                                                     </div>
                                                 </div>
                                                 <div><p class="text-in-point">Воспользуйтесь категорией или опишите в поиске то, что думаете! Возможно, такой тег уже существует</p></div>
@@ -87,7 +91,7 @@
                         </div>
                         <div class="row mt-5">
                             <!--Левый нижний-->
-                            <div class="col">
+                            <div class="col point">
                                 <div class="row">
                                     <div class="col-2"><div class="point-num"><p>3</p></div></div>
                                     <div class="col">
@@ -96,7 +100,7 @@
                                                 <div class="point-text-head">
                                                     <div class="row">
                                                         <div class="col-3 d-flex align-items-center justify-content-center"><img class="ms-4 mb-3" src="CSS/Img/PointPict3.png" alt=""></div>
-                                                        <div class="col d-flex align-items-center justify-content-center"><p>Отмечайте свои эмоции</p></div>
+                                                        <div class="col d-flex align-items-center justify-content-center"><p>Анализируйте свое состояние</p></div>
                                                     </div>
                                                 </div>
                                                 <div><p class="text-in-point">Отдельная страница с анализом: используй трекеры, отмечай энергию и смотри статистику</p></div>
@@ -106,7 +110,7 @@
                                 </div>
                             </div>
                             <!--Правый нижний-->
-                            <div class="col">
+                            <div class="col point">
                                 <div class="row">
                                     <div class="col-2"><div class="point-num"><p>4</p></div></div>
                                     <div class="col">
@@ -115,7 +119,7 @@
                                                 <div class="point-text-head">
                                                     <div class="row">
                                                         <div class="col-3 d-flex align-items-center justify-content-center"><img class="ms-4 mb-3" src="CSS/Img/PointPict4.png" alt=""></div>
-                                                        <div class="col d-flex align-items-center justify-content-center"><p>Отмечайте свои эмоции</p></div>
+                                                        <div class="col d-flex align-items-center justify-content-center"><p>Делитесь статистикой с психотерапевтом</p></div>
                                                     </div>
                                                 </div>
                                                 <div><p class="text-in-point">Поделитесь аккаунтом с психотерапевтом, чтобы он видел изменения ваших эмоций в реальном времени</p></div>
@@ -126,8 +130,17 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div> 
             </div>
+        <div class="row" style="margin-top: 8rem;">
+            <div class="col" style="text-align: center;">
+                <h2>Подписка на Sensiary</h2>
+                <h3 style="margin-top: 5rem;">Все эмоции и их анализ в одной подписке</h3> 
+                <button class="button" style="margin-left: 0rem; margin-top: 0.5rem;">60 дней бесплатно</button>
+                <p style="font-weight: lighter; margin-top: 0.5rem;">далее 350 Р в месяц</p>
+            </div>
+            
+        </div>
         </main>
     </div>
     <!-- Подключение Bootstrap JS (новая версия) -->
