@@ -37,7 +37,7 @@ h3{
 }
 #emotion-text{
     color: #FFF;
-    text-shadow: 0px 0px 50px #FFF;
+    text-shadow: 0px 0px 100px #FFF;
 }
 @media (max-width: 720px) {
     h1{
