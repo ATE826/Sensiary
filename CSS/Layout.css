@@ -58,8 +58,8 @@ body{
     font-weight: lighter;
 }
 .circle {
-    width: 20px !important;         
-    height: 20px !important;
+    width: 40px !important;         
+    height: 40px !important;
     border-radius: 50%;
     background-color: #DCD7D0; 
     margin-top: 0.5%;
@@ -71,7 +71,7 @@ body{
     border-radius: 20px;
 }
 .vertical-text{
-    margin-left: -1rem;
+    margin-left: -3rem;
     margin-top: 17rem;
     position: absolute;
     transform: rotate(-90deg);
@@ -81,6 +81,7 @@ body{
     white-space: nowrap;
     color:#FFF;
     display: inline-block;   
+    font-family: 'Inter';
 }
 .text{
     margin-left: 5rem !important;

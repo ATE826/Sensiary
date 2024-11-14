@@ -40,10 +40,13 @@ h3{
     text-shadow: 0px 0px 100px #FFF;
 }
 #copyrated{
-    color: var(--accent-text-color) !important;
-    font-weight: lighter;
-    text-align: right;
-    font-family: 'Comfortaa';
+    p{
+        color: var(--accent-text-color) !important;
+        font-weight: lighter;
+        text-align: center;
+        font-family: 'Comfortaa';
+    }
+    
 }
 @media (max-width: 720px) {
     h1{
