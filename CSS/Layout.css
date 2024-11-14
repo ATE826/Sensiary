@@ -81,7 +81,7 @@ body{
     color:#FFF;
     display: inline-block;   
 }
-#text{
+.text{
     margin-left: 4rem;
 }
 #main-text{
@@ -111,14 +111,11 @@ body{
     .point{
         margin-bottom: 3rem;
     }
-    #main{
+    .main{
         display: none !important;
     }
-    #text{
+    .text{
         margin-left: 1.5rem;
-    }
-    #text{
-        margin-left: 0rem;
     }
     #point-container{
         margin-left: 0rem !important;
