@@ -18,6 +18,7 @@ h1{
     color: var(--accent-text-color) !important;   
     font-family: 'Comfortaa', sans-serif;
     font-size: 50pt !important;
+    text-shadow: 2px 2px 2px #000;
 }
 h2{
     color: var(--text-color) !important;   
