@@ -30,6 +30,11 @@ h3{
     font-family: 'Comfortaa', sans-serif;
     font-size: 15pt !important;
 }
+input{
+    background-color:#05142F;
+    border: none;
+    border-bottom: solid 2px #FFF;
+}
 .nav-link{
     font-size: 17pt !important;
 }
@@ -38,6 +43,9 @@ h3{
     font-weight: lighter;
     text-align: right;
     margin-top: 5rem;
+}
+.modal-content{
+    background-image: url(Img/Wave.png)
 }
 #emotion-text{
     color: #FFF;
