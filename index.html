@@ -145,10 +145,54 @@
         <div class="row" style="margin-top: 8rem;">
             <div class="col ms-5">
                 <h2>Часто задаваемые вопросы:</h2>
-                <div class="mt-4" id="line"></div>
-                <div class="mt-4" id="line"></div>
-                <div class="mt-4" id="line"></div>
-                <div class="mt-4" id="line"></div>
+                <!-- 1 вопрос -->
+                <div class="accordion mt-4" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading1" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+                                Как оплачиваются услуги вашего сайта?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptas quia voluptatem eaque dolores mollitia reprehenderit sit, enim consequuntur temporibus repellat, inventore soluta deleniti vero magnam officiis dolor esse eligendi?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 вопрос -->
+                <div class="accordion mt-4" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                Как происходит запись и анализ эмоций?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat possimus ullam, a iste alias minima impedit eum nihil neque cupiditate officia distinctio aliquid deserunt laborum hic quia minus, id ratione?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 вопрос -->
+                <div class="accordion mt-4" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faqHeading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                Как делиться статистикой с психотерапевтом?
+                            </button>
+                        </h2>
+                        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ullam ipsum quae nisi neque provident ex consectetur, magni officiis voluptatum a non illum, accusantium animi molestias voluptates deleniti voluptatibus harum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <p class="text-areYouShure" style="text-align: center; margin-top: 5rem;">Начни отслеживать свои эмоции<br>прямо сейчас</p>
                 <div class="d-flex justify-content-center"><button class="button" style="margin-left: 0rem; margin-top: 0.5rem; margin-bottom: 15rem;">Зарегистрироваться</button></div>
             </div>
@@ -198,7 +242,7 @@
                         <input type="password" placeholder="Пароль" class="form-control my-2 w-50 form-text">
                     </div>
                     <div class="d-flex justify-content-center" style="margin-top: 5.5rem;">
-                        <button type="button" class="btn btn-primary form-btn" data-bs-dismiss="modal">Войти</button>
+                        <button type="button" class="btn btn-primary form-btn" data-bs-dismiss="modal" onclick="window.location.href='profile.html'">Войти</button>
                     </div>
                     <div class="d-flex justify-content-center" style="margin-top: -1rem;"><p class="text-areYouShure">Нет аккаунта? <span><a href="#" data-bs-toggle="modal" data-bs-target="#reg-window" data-bs-dismiss="modal">Зарегистрироваться</a></span></p></div>
                 </div>       
@@ -230,7 +274,7 @@
                         <input type="date" placeholder="Адрес эл. почты" class="form-control my-2 w-50 form-text">
                     </div>
                     <div class="d-flex justify-content-center mt-5">
-                        <button type="button" class="btn btn-primary form-btn w-50" data-bs-dismiss="modal">Зарегистрироваться</button>
+                        <button type="button" class="btn btn-primary form-btn w-50" data-bs-dismiss="modal" onclick="window.location.href='profile.html'">Зарегистрироваться</button>
                     </div>
                     <div class="d-flex justify-content-center" style="margin-top: -3rem;"><p class="text-areYouShure">Уже есть аккаунт? <span><a href="#" data-bs-toggle="modal" data-bs-target="#modal-window" data-bs-dismiss="modal">Войти</a></span></p></div>
                 </div>       
