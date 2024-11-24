@@ -49,16 +49,16 @@ input{
 }
 .form-text{
     background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
+    color: var(--accent-text-color) !important;
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
     border-radius: 0% !important;
-    border-bottom: solid 1px #FFF!important;
+    border-bottom: solid 1px var(--accent-text-color)!important;
     
 }
 .form-text::placeholder {
-    color: var(--text-color) !important; /* Новый цвет текста плейсхолдера */
+    color: var(--accent-text-color) !important; /* Новый цвет текста плейсхолдера */
     opacity: 1; /* Убедитесь, что плейсхолдер полностью видим */
     font-family: 'Comfortaa' !important;
     font-weight: lighter !important;
@@ -73,6 +73,17 @@ input{
     width: 146px !important;
     height: 55px !important;
     border-radius: 20px !important;
+}
+.cross-close {
+    filter: brightness(0) invert(1); /* Делает крестик белым */
+    background-color: transparent;  /* Убирает фон */
+    border: none;                   /* Убирает рамки */
+    opacity: 1;                     /* Делает его полностью видимым */
+}
+
+.cross-close:hover {
+    filter: brightness(0.8) invert(1); /* Подсветка на hover */
+    opacity: 1;
 }
 #emotion-text{
     color: #FFF;
