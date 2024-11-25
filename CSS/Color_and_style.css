@@ -44,6 +44,11 @@ input{
     text-align: right;
     margin-top: 5rem;
 }
+#faqAccordion.accordion{
+    --bs-accordion-bg : #223268;
+    color: var(--text-color) !important;
+}
+
 .modal-content{
     background-image: url(Img/Wave.png)
 }
