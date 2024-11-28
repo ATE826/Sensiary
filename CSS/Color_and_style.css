@@ -44,9 +44,9 @@ input{
     text-align: right;
     margin-top: 5rem;
 }
-#faqAccordion.accordion {
+/*#faqAccordion.accordion {
     --bs-accordion-bg: #1F264A;
-}
+}*/
 
 .modal-content{
     background-image: url(Img/Wave.png)
@@ -84,7 +84,16 @@ input{
     border: none;                   /* Убирает рамки */
     opacity: 1;                     /* Делает его полностью видимым */
 }
-
+.text-side{
+    font-family: 'Unbounded' !important;
+    font-size: 24pt !important;
+    color: var(--accent-text-color) !important;
+}
+.text-main{
+    font-family: 'Unbounded' !important;
+    font-size: 32pt !important;
+    color: var(--text-color) !important;
+}
 .cross-close:hover {
     filter: brightness(0.8) invert(1); /* Подсветка на hover */
     opacity: 1;
