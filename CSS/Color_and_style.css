@@ -110,8 +110,12 @@ input{
         font-family: 'Comfortaa';
     }
 }
+
 @media (max-width: 720px) {
     h1{
         font-size: 45pt !important;
+    }
+    #reg{
+        font-size: 10pt !important;
     }
 }

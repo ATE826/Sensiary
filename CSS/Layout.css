@@ -83,6 +83,9 @@
     display: inline-block;   
     font-family: 'Inter';
 }
+.point{
+    margin-left: 3rem;
+}
 .text{
     margin-left: 5rem;
 }
@@ -96,6 +99,14 @@
     width: 100%;
     height: 55px;
     background-color: rgba(65, 74, 82, 0.5);
+}
+#sotseti{
+    margin-top: 9rem; 
+    margin-bottom: 8rem; 
+    margin-left: 20rem;
+}
+#contacts{
+    margin-top: 8rem; margin-bottom: 8rem;
 }
 @media (max-width: 720px) {
     body{
@@ -114,7 +125,7 @@
         font-size: 14pt !important;
     }
     .point{
-        margin-bottom: 3rem;
+       margin-left: -2rem;
     }
     .main{
         display: none !important;
@@ -125,6 +136,13 @@
     .text-areYouShure{
         text-align: center;
     }
+    .point-text{
+        width: 420px;
+        height: 300px;
+    }
+    .point-text-head{
+        width: 420px;
+    }
     #nav-link-first{
         margin-left: 1rem !important;
     }
@@ -134,10 +152,36 @@
     #point-container{
         margin-left: 0rem !important;
     }   
-
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: left; /* Центрирование элементов по вертикали */
+        margin-left: -1rem;
+    }
+    #sotseti{
+        margin-top: 0rem; 
+        margin-bottom: 2rem; 
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: left; /* Центрирование элементов по вертикали */
+    }
+    #contacts{
+        margin-top: 1rem; margin-bottom: 1rem;
+    }
+    #profile{
+        width: 100%;
+    }
+    #subscribe{
+        margin-left: 0rem;
+    }
 }
 @media (max-width: 400px){
     .nav-link{
         font-size: 12pt !important;
     }
+    .point{
+        margin-left: 0.001rem;
+    }
+    
 }

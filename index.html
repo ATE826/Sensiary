@@ -49,10 +49,10 @@
             <div class="row d-flex justify-content-center align-items-center ms-5" id="point-container">
                 <div id="main-point">
                     <h2>Мы поможем познать себя</h2>
-                    <div class="container-fluid points">
+                    <div class="point">
                         <div class="row mt-5">
                             <!--Левый верхний-->
-                            <div class="col point">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-2"><div class="point-num"><p>1</p></div></div>
                                     <div class="col">
@@ -92,7 +92,7 @@
                         </div>
                         <div class="row mt-5">
                             <!--Левый нижний-->
-                            <div class="col point">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-2"><div class="point-num"><p>3</p></div></div>
                                     <div class="col">
@@ -111,7 +111,7 @@
                                 </div>
                             </div>
                             <!--Правый нижний-->
-                            <div class="col point">
+                            <div class="col">
                                 <div class="row">
                                     <div class="col-2"><div class="point-num"><p>4</p></div></div>
                                     <div class="col">
@@ -203,15 +203,15 @@
     <div class="container-fluid">
         <div class="row">
             <footer>
-                <div class="row">
+                <div class="row" id="footer">
                     <div class="main me-5" style="width: 10rem;">
                         <div class="col-1 vertical-text" style="margin-top: 10rem !important;">КОНТАКТЫ</div>
                     </div>
-                    <div class="col d-block justify-content-center align-items-center container-fluid text" style="margin-top: 8rem; margin-bottom: 8rem;">        
+                    <div class="col d-block justify-content-center align-items-center container-fluid text" id="contacts">        
                         <p style="font-size: xx-large;">Sensiary@mail.ru</p>
                         <p style="font-size: xx-large;">+7 800 555-35-35</p>     
                     </div>
-                    <div class="col-4 container-fluid text" style="margin-top: 9rem; margin-bottom: 8rem; margin-left: 20rem;">
+                    <div class="col-4 container-fluid text" id="sotseti">
                         <div class="row d-flex justify-content-center align-items-center">
                             <div class="col-1"><img src="CSS/Img/tg.png" alt="" style="width: 44px;"></div>
                             <div class="col mt-2"><p>@sensiary_blog</p></div>
@@ -234,7 +234,7 @@
                     <button type="button" class="btn-close cross-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h2 style="text-align: center; margin-top: 6rem; font-size: 50pt !important; ">Вход</h2>
+                    <h2 style="text-align: center; margin-top: 6rem; font-size: 30pt !important;" class="text-reg-auth">Вход</h2>
                     <div class="container d-flex row mt-5 justify-content-center">
                         <input type="text" placeholder="Логин" class="form-control my-2 w-50 form-text">
                     </div>
@@ -257,7 +257,7 @@
                     <button type="button" class="btn-close cross-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h2 style="text-align: center; margin-top: 2rem; font-size: 50pt !important; ">Регистрация</h2>
+                    <h2 style="text-align: center; margin-top: 6rem; font-size: 30pt !important;">Регистрация</h2>
                     <div class="container d-flex row mt-4 justify-content-center">
                         <input type="text" placeholder="Логин" class="form-control my-2 w-50 form-text">
                     </div>
@@ -274,7 +274,7 @@
                         <input type="date" placeholder="Адрес эл. почты" class="form-control my-2 w-50 form-text">
                     </div>
                     <div class="d-flex justify-content-center mt-5">
-                        <button type="button" class="btn btn-primary form-btn w-50" data-bs-dismiss="modal" onclick="window.location.href='profile.html'">Зарегистрироваться</button>
+                        <button type="button" id="reg" class="btn btn-primary form-btn w-50" data-bs-dismiss="modal" onclick="window.location.href='profile.html'"><p>Зарегистрироваться</p></button>
                     </div>
                     <div class="d-flex justify-content-center" style="margin-top: -3rem;"><p class="text-areYouShure">Уже есть аккаунт? <span><a href="#" data-bs-toggle="modal" data-bs-target="#modal-window" data-bs-dismiss="modal">Войти</a></span></p></div>
                 </div>       
