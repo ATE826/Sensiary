@@ -20,10 +20,12 @@ function SetDataFromForm() {
     const date = localStorage.getItem('date');
 
     document.getElementById('prof-login').innerText = login || 'Нет данных';
+    document.getElementById('prof-name').innerText = 'Нет данных';
     document.getElementById('prof-phone').innerText = phone || 'Нет данных';
     document.getElementById('prof-mail').innerText = mail || 'Нет данных';
     document.getElementById('prof-date').innerText = date || 'Нет данных';
-    document.getElementById('prof-password').innerText = '**********';
+    document.getElementById('prof-city').innerText = 'Нет данных';
+    document.getElementById('prof-password').innerText = '*'.repeat(password.length);
 }
 
 function handleRegistration() {
