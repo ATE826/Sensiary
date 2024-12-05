@@ -35,6 +35,16 @@ input{
     border: none;
     border-bottom: solid 2px #FFF;
 }
+.profile-point{
+    margin-top: 2rem;
+    font-size: 15pt !important;
+    color: var(--accent-text-color);
+    font-family: 'Comfortaa';
+}
+.a-blue{
+    color: var(--accent-text-color) !important;
+    font-family: 'Comfortaa';
+}
 .nav-link{
     font-size: 17pt !important;
 }
@@ -52,8 +62,10 @@ input{
     background-image: url(Img/Wave.png)
 }
 .form-text{
+    margin-top: -1.rem !important;
     background-color: var(--bg-color) !important;
-    color: var(--accent-text-color) !important;
+    color: var(--text-color) !important;
+    font-size: 20pt !important;
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
