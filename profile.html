@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +24,9 @@
                 </div> 
                 <!-- Ссылки в центре -->
                 <div class="d-flex justify-content-around flex-grow-1">
-                    <a class="d-flex align-items-center text-side" href="#">Анализ</a>
+                    <a onclick="window.location.href='analysis.html'" class="d-flex align-items-center text-side" href="#">Анализ</a>
                     <a class="d-flex align-items-center text-main" href="#">Профиль</a>
-                    <a class="d-flex align-items-center text-side" href="#">Запись</a>
+                    <a onclick="window.location.href='writeEmotion.html'" class="d-flex align-items-center text-side" href="#">Запись</a>
                 </div>
                 
                 <!-- Иконка справа -->
@@ -43,7 +43,7 @@
             <div class="row">
                     <div class="col-2 d-flex" id="profile"><img src="CSS/Img/PortfolioPhoto.png" style="width:145px; height: 145px;" alt=""></div>
                     <div class="col d-flex justify-content-start flex-column" id="subscribe" style="margin-left: -3rem;">
-                        <p style="font-size: 20pt; color: #A6B1D1;">Пользователь</p>
+                        <p id="prof-login" style="font-size: 20pt; color: #A6B1D1;">Пользователь</p>
                         <p style="font-size: 40pt; margin-top: -2rem;">user</p>
                         <div class="d-flex align-items-center">
                             <p style="color: #A6B1D1; font-size: 20pt; margin-top: -1rem;">Статус подписки: <span style="color: #FFF;" id="isActive">неактивирована</span></p>
@@ -55,25 +55,25 @@
             </div>
             <div class="container mt-5">
                 <p class="profile-point">ФИО</p>
-                <p class="form-text">Name Name Name</p>
+                <p id="prof-name" class="form-text">Name Name Name</p>
 
                 <p class="profile-point">Дата рождения</p>
-                <p class="form-text">DD/MM/YYYY</p>
+                <p id="prof-date" class="form-text">DD/MM/YYYY</p>
 
                 <p class="profile-point">Пароль</p>
-                <p class="form-text">********** (лучше бы убрать отсюда)</p>
+                <p id="prof-password" class="form-text">********** (лучше бы убрать отсюда)</p>
 
                 <p class="profile-point">Телефон</p>
-                <p class="form-text">+0(000)000-00-00</p>
+                <p id="prof-phone" class="form-text">+0(000)000-00-00</p>
 
                 <p class="profile-point">Почта</p>
-                <p class="form-text">mymail@mail.ru</p>
+                <p id="prof-mail" class="form-text">mymail@mail.ru</p>
 
                 <p class="profile-point">Город</p>
-                <p class="form-text">Город</p>
+                <p id="prof-city" class="form-text">Город</p>
 
                 <p class="profile-point">Пол</p>
-                <p class="form-text">Не определено</p>
+                <p id="prof-gender" class="form-text">Не определено</p>
 
                 <a href="#" onclick="window.location.href='index.html'" class="d-flex justify-content-end" style="margin-top: 10rem; margin-bottom: 17rem; font-size: 20pt !important; font-family: 'Comfortaa' !important; color: #B51313 !important">Выйти</a>
             </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col d-flex justify-content-end">
                     <div class="d-flex justify-content-between me-5" style="width: 500px;">
-                        <a href="" class="a-blue" style="font-size: 16pt;">Политика конфиденциальности</a>
+                        <a onclick="window.location.href='Confidential.html'" href="" class="a-blue" style="font-size: 16pt;" >Политика конфиденциальности</a>
                         <a href="" class="a-blue" style="font-size: 16pt;">Блог</a>
                     </div>
                 </div>
@@ -99,5 +99,8 @@
     
     <!-- Подключение Bootstrap JS (новая версия) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="JS/regData.js"></script>
+    <script src="JS/loadData.js"></script>
 </body>
 </html>
