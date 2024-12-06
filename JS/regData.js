@@ -25,7 +25,7 @@ function SetDataFromForm() {
     document.getElementById('prof-mail').innerText = mail || 'Нет данных';
     document.getElementById('prof-date').innerText = date || 'Нет данных';
     document.getElementById('prof-city').innerText = 'Нет данных';
-    document.getElementById('prof-password').innerText = '*'.repeat(password.length);
+    document.getElementById('prof-password').innerText = '*'.repeat(password.length) || 'Нет данных';
 }
 
 function handleRegistration() {

@@ -16,19 +16,12 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header class="row align-items-center-center" style="border-bottom: solid 1px #A6B1D1;">
+        <header class="row align-items-center-center mt-1">
             <div class="d-flex justify-content-between align-items-center w-100">
                 <!-- Круг слева -->
                 <div id="top">
                     <div class="circle" style="width: 40px; height: 40px;"></div>
                 </div> 
-                <!-- Ссылки в центре -->
-                <div class="d-flex justify-content-around flex-grow-1">
-                    <a onclick="window.location.href='analysis.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Анализ</a>
-                    <a class="d-flex align-items-center text-main" style="font-size: 25pt !important;" href="#">Профиль</a>
-                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Запись</a>
-                </div>
-                
                 <!-- Иконка справа -->
                 <div>
                     <img src="CSS/Img/Question.png" alt="Вопросы" style="width: 40px; height: 40px;">
@@ -50,32 +43,59 @@
                             <div class="circle" style="width: 14px !important; height: 14px !important; background-color: #B51313; margin-top: -2rem; margin-left: 5px;"></div>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-top justify-content-end" style="text-align: right; font-size: 20pt;"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
                 </div>
             </div>
             <div class="container mt-5">
                 <p class="profile-point">ФИО</p>
-                <p id="prof-name" class="form-text">Name Name Name</p>
-
+                <div class="row">
+                    <div class="col-10"><input id="edit-name" type="text" placeholder="ФИО" class="form-control my-2 form-text"></div>
+                    <div class="col d-flex justify-content-end align-items-center"><a href="#" class="text-change">изменить</a></div>
+                </div>
+                
                 <p class="profile-point">Дата рождения</p>
-                <p id="prof-date" class="form-text">DD/MM/YYYY</p>
+                <div class="row">
+                    <div class="col-10"><input id="edit-date" type="date" style="color: #A6B1D1 !important" placeholder="Дата" class="form-control my-2 form-text"></div>
+                    <div class="col d-flex justify-content-end align-items-center"><a href="#" class="text-change">изменить</a></div>
+                </div>
+                
 
                 <p class="profile-point">Пароль</p>
-                <p id="prof-password" class="form-text">**********</p>
+                <div class="row">
+                    <div class="col-10"><input id="edit-password" type="password" placeholder="Пароль" class="form-control my-2 form-text"></div>
+                    <div class="col d-flex justify-content-end align-items-center"><a href="#" class="text-change">изменить</a></div>
+                </div>
+                
 
                 <p class="profile-point">Телефон</p>
-                <p id="prof-phone" class="form-text">+0(000)000-00-00</p>
+                <div class="row">
+                    <div class="col-10"><input id="edit-phone" type="text" placeholder="Телефон" class="form-control my-2 form-text"></div>
+                    <div class="col d-flex justify-content-end align-items-center"><a href="#" class="text-change">изменить</a></div>
+                </div>
 
                 <p class="profile-point">Почта</p>
-                <p id="prof-mail" class="form-text">mymail@mail.ru</p>
+                <div class="row">
+                    <div class="col-10"><input id="edit-mail" type="mail" placeholder="Почта" class="form-control my-2 form-text"></div>
+                    <div class="col d-flex justify-content-end align-items-center"><a href="#" class="text-change">изменить</a></div>
+                </div>
+                
 
                 <p class="profile-point">Город</p>
-                <p id="prof-city" class="form-text">Город</p>
+                <div class="row">
+                    <div class="col-10"><input id="edit-city" type="text" placeholder="Город" class="form-control my-2 form-text"></div>
+                    <div class="col d-flex justify-content-end align-items-center"><a href="#" class="text-change">изменить</a></div>
+                </div>
+                
 
                 <p class="profile-point">Пол</p>
-                <p id="prof-gender" class="form-text">Не определено</p>
-
-                <a href="#" onclick="window.location.href='index.html'" class="d-flex justify-content-end" style="margin-top: 10rem; margin-bottom: 17rem; font-size: 20pt !important; font-family: 'Comfortaa' !important; color: #B51313 !important">Выйти</a>
+                <div class="row">
+                    <div class="col-10"><input id="edit-gender" type="text" placeholder="Пол" class="form-control my-2 form-text"></div>
+                    <div class="col d-flex justify-content-end align-items-center"><a href="" class="text-change">изменить</a></div>
+                </div>
+                
+                <div class="row align-items-center" style="margin-top: 10rem; margin-bottom: 17rem; font-size: 20pt !important; font-family: 'Comfortaa' !important; ">
+                    <div class="col d-flex justify-content-start"><a href="#" onclick="window.location.href='profile.html'" style="color:#A6B1D1 !important">Отмена</a></div>
+                    <div class="col d-flex justify-content-end"><a href="#" onclick="window.location.href='profile.html'" style="color:#A6B1D1 !important">Сохранить</a></div>
+                </div>
             </div>
         </main>
     </div>
