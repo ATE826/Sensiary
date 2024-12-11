@@ -175,6 +175,9 @@
     #subscribe{
         margin-left: 0rem;
     }
+    #questions{
+        margin-left: 0rem !important;
+    }
 }
 @media (max-width: 400px){
     .nav-link{
