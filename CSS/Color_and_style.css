@@ -54,10 +54,13 @@ input{
     text-align: right;
     margin-top: 5rem;
 }
+
+button {
+    border:none;
+}
 /*#faqAccordion.accordion {
     --bs-accordion-bg: #1F264A;
 }*/
-
 .modal-content{
     background-image: url(Img/Wave.png)
 }
@@ -73,6 +76,130 @@ input{
     border-bottom: solid 1px var(--accent-text-color)!important;
     
 }
+
+.date {
+    color: white;
+    font-family: 'Unbounded', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin: 50px;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+
+.color {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    
+}
+
+.filtermenu {
+    background-color:#1F264A;
+    font-family: 'Comfortaa', sans-serif;
+    display: inline-flex;
+    text-align: center;
+    justify-content:space-evenly;
+    padding: 6px;
+    margin-top: 30px;
+}
+
+.dropdown-toggle {
+    background-color: #1F264A !important;
+    border: none !important;
+}
+
+.dropdown-menu {
+    background-color: #1F264A !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: #31385E !important;
+}
+.cubs {
+    margin-bottom: 150px;
+
+}
+
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+}
+.yellow {
+    background: linear-gradient(45deg, yellow,#FDF281);
+    background-size: 300% 300%; /* Размер градиента для охвата всей сетки */
+}
+
+.blue {
+    background: linear-gradient(to right, black,blue);
+    background-size: 300% 300%; /* Размер градиента для охвата всей сетки */
+}
+
+.red {
+    background: linear-gradient(to right, #811A1A,#BD5757);
+    background-size: 300% 300%; /* Размер градиента для охвата всей сетки */
+}
+
+.green {
+    background: linear-gradient(to right, black, green);
+    background-size: 300% 300%; /* Размер градиента для охвата всей сетки */
+}
+
+.accordion-button {
+    background-color:#1F264A !important;
+    color: white !important; 
+}
+
+.accordion-body {
+    background-color:#31385E !important;
+    color: white !important; 
+}
+
+.yellow:nth-child(1) { background-position: 0% 0%; }
+.yellow:nth-child(2) { background-position: 20% 0%; }
+.yellow:nth-child(3) { background-position: 40% 0%; }
+.yellow:nth-child(4) { background-position: 60% 0%; }
+.yellow:nth-child(5) { background-position: 80% 0%; }
+.yellow:nth-child(6) { background-position: 100% 0%; }
+.yellow:nth-child(7) { background-position: 100% 20%; }
+.yellow:nth-child(8) { background-position: 100% 40%; }
+
+.red:nth-child(1) { background-position: 0% 0%; }
+.red:nth-child(2) { background-position: 20% 0%; }
+.red:nth-child(3) { background-position: 40% 0%; }
+.red:nth-child(4) { background-position: 60% 0%; }
+.red:nth-child(5) { background-position: 80% 0%; }
+.red:nth-child(6) { background-position: 100% 0%; }
+.red:nth-child(7) { background-position: 120% 0%; }
+.red:nth-child(8) { background-position: 140% 0%; }
+
+.blue:nth-child(1) { background-position: 0% 0%; }
+.blue:nth-child(2) { background-position: 20% 0%; }
+.blue:nth-child(3) { background-position: 40% 0%; }
+.blue:nth-child(4) { background-position: 60% 0%; }
+.blue:nth-child(5) { background-position: 80% 0%; }
+.blue:nth-child(6) { background-position: 100% 0%; }
+.blue:nth-child(7) { background-position: 40% 20%; }
+.blue:nth-child(8) { background-position: 60% 20%; }
+
+.green:nth-child(1) { background-position: 0% 0%; }
+.green:nth-child(2) { background-position: 20% 0%; }
+.green:nth-child(3) { background-position: 40% 0%; }
+.green:nth-child(4) { background-position: 60% 0%; }
+.green:nth-child(5) { background-position: 80% 0%; }
+.green:nth-child(6) { background-position: 100% 0%; }
+.green:nth-child(7) { background-position: 40% 20%; }
+.green:nth-child(8) { background-position: 60% 20%; }
+
 .form-text::placeholder {
     color: var(--accent-text-color) !important; /* Новый цвет текста плейсхолдера */
     opacity: 1; /* Убедитесь, что плейсхолдер полностью видим */
