@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/Color_and_style.css">
     <link rel="stylesheet" href="CSS/Layout.css">
     <link rel="stylesheet" href="CSS/Profile.css">
+    <link rel="stylesheet" href="CSS/Analys.css">
     <link rel="icon" href="CSS/favicon.ico">
     <!--Шрифы-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
@@ -35,23 +36,29 @@
                 <div>
                     <img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 40px; height: 40px;">
                 </div>
-            </div>
-            
+            </div>    
         </header>
     </div>
 
-
-
     <div class="container-fluid mt-5 stats_cubs" >
         <main class="container">
-            <div class="container mt-5">
-                <div class="stats_cube">Вы создали запись</div>
-                <div class="stats_cube">Самый частый спектр</div>
-                <div class="stats_cube">Самый редкий спектр</div>
+            <div class="container mt-5 row">
+                <div class="stats_cube col">
+                    <div id="write-stat">
+                        <p>Вы создали запись</p>
+                        <p id="wrire-create"><span id="writeNum">0</span> РАЗ</p>
+                    </div>
+                </div>
+                <div class="stats_cube col">
+                    Самый частый спектр
+                </div>
+                <div class="stats_cube col">
+                    Самый редкий спектр
+                </div>
             </div>
-            <div class="container mt-5">
-                <div class="stats_cube" style = "width: 288px; height: 302px;">Энергия</div>
-                <div class="stats_cube" style = "width: 626px; height: 302px;">Трекер настроения</div>
+            <div class="container mt-5 row">
+                <div class="stats_cube col" style = "width: 288px; height: 302px;">Энергия</div>
+                <div class="stats_cube col" style = "width: 626px; height: 302px;">Трекер настроения</div>
             </div>
         </main>
     </div>
