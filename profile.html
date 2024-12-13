@@ -6,6 +6,7 @@
     <title>Главная</title>
     <link rel="stylesheet" href="CSS/Color_and_style.css">
     <link rel="stylesheet" href="CSS/Layout.css">
+    <link rel="stylesheet" href="CSS/Profile.css">
     <link rel="icon" href="CSS/favicon.ico">
     <!--Шрифы-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
@@ -24,9 +25,9 @@
                 </div> 
                 <!-- Ссылки в центре -->
                 <div class="d-flex justify-content-around flex-grow-1">
-                    <a onclick="window.location.href='analysis.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Анализ</a>
+                    <a onclick="window.location.href='analysis.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Анализ</a>
                     <a class="d-flex align-items-center text-main" style="font-size: 25pt !important;" href="#">Профиль</a>
-                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Запись</a>
+                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Запись</a>
                 </div>
                 
                 <!-- Иконка справа -->
@@ -38,10 +39,11 @@
         </header>
     </div>
     
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" id="head">
         <main class="container">
             <div class="row">
-                    <div class="col-2 d-flex" id="profile"><img src="CSS/Img/PortfolioPhoto.png" style="width:145px; height: 145px;" alt=""></div>
+                <div id="photo">
+                    <div class="col-2 d-flex" id="profile"><img id="profile-img" src="CSS/Img/PortfolioPhoto.png" style="width:145px; height: 145px;" alt=""></div>
                     <div class="col d-flex justify-content-start flex-column" id="subscribe" style="margin-left: -3rem;">
                         <p style="font-size: 20pt; color: #A6B1D1;">Пользователь</p>
                         <p id="prof-login" style="font-size: 40pt; margin-top: -1rem;">user</p>
@@ -50,8 +52,8 @@
                             <div class="circle" style="width: 14px !important; height: 14px !important; background-color: #B51313; margin-top: -2rem; margin-left: 5px;"></div>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-top justify-content-end" style="text-align: right; font-size: 20pt;"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
                 </div>
+                <div class="col d-flex align-items-top justify-content-end" style="text-align: right; font-size: 20pt;"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
             </div>
             <div class="container mt-5">
                 <p class="profile-point">ФИО</p>

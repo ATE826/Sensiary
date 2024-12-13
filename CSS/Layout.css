@@ -112,6 +112,9 @@
     body{
         background-image: url('Img/Wave_smallscreen.png'); /* Путь к вашему PNG */
     }
+    a.top-links{
+        display: none !important;
+    }
     .circle{
         margin-left: 0rem;
     }
@@ -140,9 +143,17 @@
         width: 420px;
         height: 300px;
     }
+    .modal-content{
+        background-image: url('Img/authSmall.png');
+    }
     .point-text-head{
         width: 420px;
     }
+    .form-text {
+        width: 70% !important; /* Измените значение на нужный процент */
+        max-width: 800px; /* Ограничение максимальной ширины */
+        min-width: 200px; /* Ограничение минимальной ширины */
+    }    
     #nav-link-first{
         margin-left: 1rem !important;
     }

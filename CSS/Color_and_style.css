@@ -259,6 +259,12 @@ button {
     h1{
         font-size: 45pt !important;
     }
+    .form-text{
+        font-size: 10pt !important;
+    }
+    .form-control{
+        width: 1000px !important;
+    }
     #reg-btn{
         font-size: 10pt !important;
     }

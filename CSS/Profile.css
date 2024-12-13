@@ -1,0 +1,21 @@
+@media (max-width: 720px) {
+    a.top-links{
+        display: none !important;
+    }
+    #profile-img{
+        width: 75px !important;
+        height: 75px !important;
+        margin-right: 1rem;
+    }
+    #head{
+        margin-top: 0rem !important;
+    }
+    #photo{
+        display: flex;
+        justify-content: left;
+
+    }
+    #photo p{
+        font-size: 10pt !important;
+    }
+}
