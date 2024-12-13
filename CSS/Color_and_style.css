@@ -2,6 +2,7 @@
     --bg-color: #05142F;
     --accent-text-color: #A6B1D1;
     --text-color: #FFFFFF;
+    --bs-accordion-color: white;
 }
 html body{
     background-color: var(--bg-color);
@@ -156,12 +157,60 @@ button {
 
 .accordion-button {
     background-color:#1F264A !important;
-    color: white !important; 
+    height: 70px;
+    border-radius: 20px !important;
+    border-color: #31385E !important;
+    color: white !important;
+}
+
+.accordion-item {
+    background-color:#31385E !important;
+    color: white !important;
+    border-color: #31385E !important;
+    border-radius: 20px !important;
 }
 
 .accordion-body {
     background-color:#31385E !important;
-    color: white !important; 
+    border-radius: 20px !important;
+    border-color:#31385E !important;
+    color: white;
+}
+
+.help {
+    display: flexbox;
+    width: 349px;
+    height: 398px;
+    background-color: rgba(31, 38, 74, 0.85) !important;
+    color: white;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 0.8;
+    border-radius: 20px 0px 0px 20px;
+    font-family: 'Unbounded', sans-serif;
+    
+}
+
+.help p {
+    padding-top: 50px;
+    color: white;
+    font-size: 24px !important;
+    z-index: inherit;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    height: 45px;
+    width: 271px;
+    display: flexbox !important;
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    background-color: #1F264A !important;
+    border-color: rgba(166, 177, 209, 0.7) !important;
+    font-size: 13px !important;
 }
 
 .yellow:nth-child(1) { background-position: 0% 0%; }
