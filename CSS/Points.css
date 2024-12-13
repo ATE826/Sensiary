@@ -1,5 +1,15 @@
+.point-num{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    height: 64px;
+    width: 64px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #16267D, #6E2257);
+    font-size: 20pt !important;
+}
 .point{
-    margin-left: 3rem;
+    margin-left: 0rem;
 }
 .text{
     margin-left: 5rem;
@@ -59,7 +69,7 @@
 }
 @media (max-width: 400px){
     .point{
-        margin-left: 0.001rem;
+        margin-left: 23423423423423rem !important;
     }
     
 }
