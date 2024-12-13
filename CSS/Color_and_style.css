@@ -36,6 +36,9 @@ input{
     border: none;
     border-bottom: solid 2px #FFF;
 }
+button {
+    border:none;
+}
 .profile-point{
     margin-top: 2rem;
     font-size: 15pt !important;
@@ -55,29 +58,6 @@ input{
     text-align: right;
     margin-top: 5rem;
 }
-
-button {
-    border:none;
-}
-/*#faqAccordion.accordion {
-    --bs-accordion-bg: #1F264A;
-}*/
-.modal-content{
-    background-image: url(Img/Wave.png)
-}
-.form-text{
-    margin-top: -1.rem !important;
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-    font-size: 20pt !important;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-radius: 0% !important;
-    border-bottom: solid 1px var(--accent-text-color)!important;
-    
-}
-
 .date {
     color: white;
     font-family: 'Unbounded', sans-serif;
@@ -85,7 +65,6 @@ button {
     text-align: center;
     margin: 50px;
 }
-
 .color-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -100,7 +79,6 @@ button {
     border-radius: 15px;
     
 }
-
 .filtermenu {
     background-color:#1F264A;
     font-family: 'Comfortaa', sans-serif;
@@ -110,7 +88,6 @@ button {
     padding: 6px;
     margin-top: 30px;
 }
-
 .dropdown-toggle {
     background-color: #1F264A !important;
     border: none !important;
@@ -236,43 +213,6 @@ button {
     align-items:center;
 }
 
-.form-text::placeholder {
-    color: var(--accent-text-color) !important; /* Новый цвет текста плейсхолдера */
-    opacity: 1; /* Убедитесь, что плейсхолдер полностью видим */
-    font-family: 'Comfortaa' !important;
-    font-weight: lighter !important;
-}
-.form-btn{
-    background-color: #15267D !important;
-    font-family: 'Comfortaa' !important;
-    font-size: 20pt !important;
-    border: none !important;
-    text-align: center !important;
-    align-items: center !important;
-    width: 146px !important;
-    height: 55px !important;
-    border-radius: 20px !important;
-}
-.cross-close {
-    filter: brightness(0) invert(1); /* Делает крестик белым */
-    background-color: transparent;  /* Убирает фон */
-    border: none;                   /* Убирает рамки */
-    opacity: 1;                     /* Делает его полностью видимым */
-}
-.text-side{
-    font-family: 'Unbounded' !important;
-    font-size: 24pt !important;
-    color: var(--accent-text-color) !important;
-}
-.text-main{
-    font-family: 'Unbounded' !important;
-    font-size: 32pt !important;
-    color: var(--text-color) !important;
-}
-.cross-close:hover {
-    filter: brightness(0.8) invert(1); /* Подсветка на hover */
-    opacity: 1;
-}
 .text-change{
     font-family: 'Comfortaa';
     font-size: 15pt !important;
@@ -294,14 +234,5 @@ button {
 @media (max-width: 720px) {
     h1{
         font-size: 45pt !important;
-    }
-    .form-text{
-        font-size: 10pt !important;
-    }
-    .form-control{
-        width: 1000px !important;
-    }
-    #reg-btn{
-        font-size: 10pt !important;
     }
 }

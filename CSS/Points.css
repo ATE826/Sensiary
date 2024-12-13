@@ -51,25 +51,41 @@
 
 @media (max-width: 720px) {
     .point{
-       margin-left: -2rem;
+       margin-left: 0rem;
     }
     .text{
         margin-left: 0rem;
     }
     .point-text{
-        width: 400px;
+        width: 350px;
         height: 300px;
     }
     .point-text-head{
-        width: 400px;
+        width: 350px;
+    }
+    .point-num{
+        margin-bottom: 1rem;
     }
     #point-container{
         margin-left: 0rem !important;
-    }   
+    }
+    #point-2, #point-4{
+        margin-top: 3rem;
+    }
 }
 @media (max-width: 400px){
+    .point-text{
+        width: 320px;
+        height: 350px;
+    }
+    .point-text-head{
+        width: 320px;
+    }
     .point{
-        margin-left: 23423423423423rem !important;
+        margin-left: -1rem !important;
+    }
+    .point-num{
+        margin-bottom: 1rem;
     }
     
 }

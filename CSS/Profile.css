@@ -1,3 +1,25 @@
+.profile-text{
+    margin-top: -1.rem !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-size: 20pt !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0% !important;
+    border-bottom: solid 1px var(--accent-text-color)!important;
+    
+}
+.text-side{
+    font-family: 'Unbounded' !important;
+    font-size: 24pt !important;
+    color: var(--accent-text-color) !important;
+}
+.text-main{
+    font-family: 'Unbounded' !important;
+    font-size: 32pt !important;
+    color: var(--text-color) !important;
+}
 @media (max-width: 720px) {
     a.top-links{
         display: none !important;

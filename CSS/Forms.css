@@ -1,0 +1,55 @@
+.modal-content{
+    background-image: url(Img/Wave.png)
+}
+.form-text{
+    margin-top: -1.rem !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-size: 20pt !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0% !important;
+    border-bottom: solid 1px var(--accent-text-color)!important;
+    
+}
+.form-text::placeholder {
+    color: var(--accent-text-color) !important; /* Новый цвет текста плейсхолдера */
+    opacity: 1; /* Убедитесь, что плейсхолдер полностью видим */
+    font-family: 'Comfortaa' !important;
+    font-weight: lighter !important;
+}
+.form-btn{
+    background-color: #15267D !important;
+    font-family: 'Comfortaa' !important;
+    font-size: 20pt !important;
+    border: none !important;
+    text-align: center !important;
+    align-items: center !important;
+    width: 146px !important;
+    height: 55px !important;
+    border-radius: 20px !important;
+}
+.cross-close {
+    filter: brightness(0) invert(1); /* Делает крестик белым */
+    background-color: transparent;  /* Убирает фон */
+    border: none;                   /* Убирает рамки */
+    opacity: 1;                     /* Делает его полностью видимым */
+}
+.cross-close:hover {
+    filter: brightness(0.8) invert(1); /* Подсветка на hover */
+    opacity: 1;
+}
+
+@media (max-width: 720px) {
+
+    .form-text{
+        font-size: 10pt !important;
+    }
+    .form-control{
+        width: 1000px !important;
+    }
+    #reg-btn{
+        font-size: 10pt !important;
+    }
+}
