@@ -212,42 +212,29 @@ button {
     border-color: rgba(166, 177, 209, 0.7) !important;
     font-size: 13px !important;
 }
+.stats_cube {
+    margin-top: 30px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 27px;
+    margin-right: 50px;
+    display: inline-block;
+    justify-content: space-around;
+    height: 153px;
+    width: 288px;
+    background-color: #1F264A;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 12pt;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
 
-.yellow:nth-child(1) { background-position: 0% 0%; }
-.yellow:nth-child(2) { background-position: 20% 0%; }
-.yellow:nth-child(3) { background-position: 40% 0%; }
-.yellow:nth-child(4) { background-position: 60% 0%; }
-.yellow:nth-child(5) { background-position: 80% 0%; }
-.yellow:nth-child(6) { background-position: 100% 0%; }
-.yellow:nth-child(7) { background-position: 100% 20%; }
-.yellow:nth-child(8) { background-position: 100% 40%; }
-
-.red:nth-child(1) { background-position: 0% 0%; }
-.red:nth-child(2) { background-position: 20% 0%; }
-.red:nth-child(3) { background-position: 40% 0%; }
-.red:nth-child(4) { background-position: 60% 0%; }
-.red:nth-child(5) { background-position: 80% 0%; }
-.red:nth-child(6) { background-position: 100% 0%; }
-.red:nth-child(7) { background-position: 120% 0%; }
-.red:nth-child(8) { background-position: 140% 0%; }
-
-.blue:nth-child(1) { background-position: 0% 0%; }
-.blue:nth-child(2) { background-position: 20% 0%; }
-.blue:nth-child(3) { background-position: 40% 0%; }
-.blue:nth-child(4) { background-position: 60% 0%; }
-.blue:nth-child(5) { background-position: 80% 0%; }
-.blue:nth-child(6) { background-position: 100% 0%; }
-.blue:nth-child(7) { background-position: 40% 20%; }
-.blue:nth-child(8) { background-position: 60% 20%; }
-
-.green:nth-child(1) { background-position: 0% 0%; }
-.green:nth-child(2) { background-position: 20% 0%; }
-.green:nth-child(3) { background-position: 40% 0%; }
-.green:nth-child(4) { background-position: 60% 0%; }
-.green:nth-child(5) { background-position: 80% 0%; }
-.green:nth-child(6) { background-position: 100% 0%; }
-.green:nth-child(7) { background-position: 40% 20%; }
-.green:nth-child(8) { background-position: 60% 20%; }
+.stats_cubs {
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+}
 
 .form-text::placeholder {
     color: var(--accent-text-color) !important; /* Новый цвет текста плейсхолдера */
