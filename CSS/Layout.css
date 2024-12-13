@@ -29,34 +29,7 @@
     background-image: linear-gradient(to top, #16267D, #6E2257);
     font-size: 20pt !important;
 }
-.point-text{
-    display: flex;
-    justify-content: center;
-    height: 285.55px;
-    width: 435px;
-    border-radius: 20px;
-    background: #181E3D;
-    box-shadow: 0px 2px 3px #000000;
-    font-size: 20pt !important;
-}
-.point-text-head{
-    display: flex;
-    justify-content: center;
-    height: 129.26px;
-    width: 435px;
-    border-radius: 20px;
-    background: #1F264A;
-    box-shadow: 0px 2px 3px #000000;
-    font-size: 17pt !important;
-    font-weight: lighter;
-}
-.text-in-point{
-    margin: 1rem;
-    display: flex;
-    align-items: center;
-    font-size: 14pt;
-    font-weight: lighter;
-}
+
 .circle {
     width: 30px !important;         
     height: 30px !important;
@@ -83,18 +56,7 @@
     display: inline-block;   
     font-family: 'Inter';
 }
-.point{
-    margin-left: 3rem;
-}
-.text{
-    margin-left: 5rem;
-}
-#main-text{
-    margin-top: 10rem;
-}
-#main-point{
-    margin-top: 15rem;
-}
+
 #line{
     width: 100%;
     height: 55px;
@@ -112,9 +74,6 @@
     body{
         background-image: url('Img/Wave_smallscreen.png'); /* Путь к вашему PNG */
     }
-    a.top-links{
-        display: none !important;
-    }
     .circle{
         margin-left: 0rem;
     }
@@ -127,9 +86,6 @@
     .nav-link{
         font-size: 14pt !important;
     }
-    .point{
-       margin-left: -2rem;
-    }
     .main{
         display: none !important;
     }
@@ -139,15 +95,8 @@
     .text-areYouShure{
         text-align: center;
     }
-    .point-text{
-        width: 420px;
-        height: 300px;
-    }
     .modal-content{
         background-image: url('Img/authSmall.png');
-    }
-    .point-text-head{
-        width: 420px;
     }
     .form-text {
         width: 70% !important; /* Измените значение на нужный процент */
@@ -160,9 +109,6 @@
     #nav-link-last{
         margin-right: 1rem !important;
     }
-    #point-container{
-        margin-left: 0rem !important;
-    }   
     #footer {
         display: flex;
         flex-direction: column;
@@ -194,8 +140,4 @@
     .nav-link{
         font-size: 12pt !important;
     }
-    .point{
-        margin-left: 0.001rem;
-    }
-    
 }

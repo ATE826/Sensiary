@@ -1,0 +1,65 @@
+.point{
+    margin-left: 3rem;
+}
+.text{
+    margin-left: 5rem;
+}
+.point-text{
+    display: flex;
+    justify-content: center;
+    height: 285.55px;
+    width: 435px;
+    border-radius: 20px;
+    background: #181E3D;
+    box-shadow: 0px 2px 3px #000000;
+    font-size: 20pt !important;
+}
+.point-text-head{
+    display: flex;
+    justify-content: center;
+    height: 129.26px;
+    width: 435px;
+    border-radius: 20px;
+    background: #1F264A;
+    box-shadow: 0px 2px 3px #000000;
+    font-size: 17pt !important;
+    font-weight: lighter;
+}
+.text-in-point{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 14pt;
+    font-weight: lighter;
+}
+#main-text{
+    margin-top: 10rem;
+}
+#main-point{
+    margin-top: 15rem;
+}
+
+@media (max-width: 720px) {
+    .point{
+       margin-left: -2rem;
+    }
+    .text{
+        margin-left: 0rem;
+    }
+    .point-text{
+        width: 400px;
+        height: 300px;
+    }
+    .point-text-head{
+        width: 400px;
+    }
+    #point-container{
+        margin-left: 0rem !important;
+    }   
+}
+@media (max-width: 400px){
+    .point{
+        margin-left: 0.001rem;
+    }
+    
+}
