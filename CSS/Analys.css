@@ -1,8 +1,122 @@
 #wrire-create, #writeNum{
-    font-size: 40pt !important; 
+    font-size: 36pt !important; 
     color: #4994FE;
-    text-shadow: 0px 0px 5px #4994FE;
+    border-radius: 1px;
+    font-family: 'Comfortaa' ;
 }
-#write-stat{
-    margin-left: 1rem;
+
+.tracker {
+    justify-content: center;
+    text-align: center;
+}
+
+.spectr {
+    color: white !important;
+}
+
+  
+.battery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Батарейка */
+.battery {
+    width: 122px;
+    height: 201px;
+    border: 1px solid #A6B1D1;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* Уровень заряда */
+.battery-level {
+    width: 100%;
+    height: 56%; /* Высота уровня заряда, измените на 60% или другое значение */
+    background-color: #e1d563;
+    position: absolute ;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Линии сетки */
+.battery-grid .grid-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 1px dashed #A6B1D1;
+}
+
+/* Цифры */
+.battery-numbers {
+    position: absolute;
+    left: -20px;
+    color: white;
+    font-family: "Comfortaa" !important;
+    font-size: 10px !important;
+}
+
+.battery-numbers p {
+    position: relative;
+    transform: translateY(150%) !important;
+    margin-top: -11px !important;
+}
+
+
+.dashed {
+    border-top: 2px dashed #6E2257;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    position: relative;
+    top: 7em;
+}
+
+.graph-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.graph {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.label-bottom{
+    position: relative;
+    top:10em !important;
+}
+
+.stable {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    height: 26px;
+    border-radius: 8px;
+    justify-content: center;
+    margin-right: 5px;
+    top:35px;
+}
+
+.positive {
+    background-color: #61BF66;
+}
+
+.negative {
+    background-color: #8041B1;
+    transform: translateY(100%) !important;
+}
+
+.stable-container{
+    position: absolute;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
 }

@@ -190,7 +190,7 @@ button {
     font-size: 13px !important;
 }
 .stats_cube {
-    margin-top: 30px;
+    margin-top: 30px !important;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     border-radius: 27px;
     margin-right: 50px;
@@ -203,7 +203,7 @@ button {
     font-size: 12pt;
     color: white;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 20px !important;
     padding-top: 10px;
 }
 
