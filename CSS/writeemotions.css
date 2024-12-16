@@ -1,0 +1,46 @@
+.modal-content, .modal-body{
+    display: flexbox;
+    width: 349px !important;
+    height: 398px !important;
+    background-color: rgba(31, 38, 74, 1) !important;
+    color: white;
+    border-radius: 20px 0px 0px 20px !important;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.modal-body {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.modal-content, .modal-dialog {
+    justify-content: right !important;
+}
+
+.modal-body p {
+    color: white;
+    font-size: 24px !important;
+    z-index: inherit;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+    background-color: transparent;  /* Убирает фон */
+    border: none;  
+}
+
+.modal-body button {
+    margin-top: 15px;
+    height: 45px;
+    width: 271px;
+    display: flexbox !important;
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    background-color: #1F264A !important;
+    border-color: rgba(166, 177, 209, 0.7) !important;
+    font-size: 13px !important;
+}

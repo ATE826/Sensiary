@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="CSS/Profile.css">
     <link rel="stylesheet" href="CSS/Analys.css">
     <link rel="icon" href="CSS/favicon.ico">
+    <link rel="stylesheet" href="CSS/writeemotions.css">
     <!--Шрифы-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
@@ -34,15 +35,15 @@
                 
                 <!-- Иконка справа -->
                 <div>
-                    <img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 40px; height: 40px;">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style = "all:unset; border-radius: 50%; background-color:none;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 40px; height: 40px;"></button>
                 </div>
             </div>    
         </header>
     </div>
 
     <div class="container-fluid mt-5 stats_cubs" >
-        <main class="container-fluid row">
-            <div class="container-fluid mt-5">
+        <main class="container">
+            <div class="container-fluid mt-5 ">
                 <div class="stats_cube col">
                     <div id="write-stat">
                         <p>Вы создали запись</p>
@@ -58,34 +59,34 @@
                     <p id="wrire-create spectr"><span id="writeNum">Нет</span></p>
                 </div>
             </div>
-            <div class="container-fluid mt-5">
-                <div class="stats_cube col" style = "width: 288px !important; height: 302px !important;">
+            <div class="container mt-5">
+                <div class="stats_cube col container" style = "width: 288px !important; height: 302px !important;">
                     <p>Энергия</p>
                     <div class="battery-container">
                         <div class="battery">
-                          <div class="battery-level"></div>
-                          <div class="battery-grid">
-                            <div class="grid-line" style="top: 10%;"></div>
-                            <div class="grid-line" style="top: 20%;"></div>
-                            <div class="grid-line" style="top: 30%;"></div>
-                            <div class="grid-line" style="top: 40%;"></div>
-                            <div class="grid-line" style="top: 50%;"></div>
-                            <div class="grid-line" style="top: 60%;"></div>
-                            <div class="grid-line" style="top: 70%;"></div>
-                            <div class="grid-line" style="top: 80%;"></div>
-                            <div class="grid-line" style="top: 90%;"></div>
-                          </div>
-                          <div class="battery-numbers">
-                            <p style="top: 10%;">9</p>
-                            <p style="top: 20%;">8</p>
-                            <p style="top: 30%;">7</p>
-                            <p style="top: 40%;">6</p>
-                            <p style="top: 50%;">5</p>
-                            <p style="top: 60%;">4</p>
-                            <p style="top: 70%;">3</p>
-                            <p style="top: 80%;">2</p>
-                            <p style="top: 90%;">1</p>
-                          </div>
+                            <div class="battery-level"></div>
+                            <div class="battery-grid">
+                                <div class="grid-line" style="top: 10%;"></div>
+                                <div class="grid-line" style="top: 20%;"></div>
+                                <div class="grid-line" style="top: 30%;"></div>
+                                <div class="grid-line" style="top: 40%;"></div>
+                                <div class="grid-line" style="top: 50%;"></div>
+                                <div class="grid-line" style="top: 60%;"></div>
+                                <div class="grid-line" style="top: 70%;"></div>
+                                <div class="grid-line" style="top: 80%;"></div>
+                                <div class="grid-line" style="top: 90%;"></div>
+                            </div>
+                            <div class="battery-numbers">
+                                <p style="top: 10%;">9</p>
+                                <p style="top: 20%;">8</p>
+                                <p style="top: 30%;">7</p>
+                                <p style="top: 40%;">6</p>
+                                <p style="top: 50%;">5</p>
+                                <p style="top: 60%;">4</p>
+                                <p style="top: 70%;">3</p>
+                                <p style="top: 80%;">2</p>
+                                <p style="top: 90%;">1</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,11 +118,24 @@
                         </div>
                     </div>
                 </div>
-                    
-                    
-                </div>
             </div>
         </main>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style = "display: flex !important; justify-content:flex-end !important; left: 31rem; top:21rem;">
+            <div class="modal-content" style = "display: flex !important; justify-content: right !important;">
+                <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+            <p>Помощь</p>
+            <button type="button" class="btn btn-primary">Инструкция</button>
+            <button type="button" class="btn btn-primary">Что означают цвета?</button>
+            <button type="button" class="btn btn-primary">Опрос для тестирования</button>
+            <button type="button" class="btn btn-primary">Чат с оператором</button>
+                </div>
+            </div>
+        </div>
     </div>
 
             

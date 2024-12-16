@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/Layout.css">
     <link rel="stylesheet" href="CSS/Profile.css">
     <link rel="icon" href="CSS/favicon.ico">
+    <link rel="stylesheet" href="CSS/writeemotions.css">
     <!--Шрифы-->
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
                 
                 <!-- Иконка справа -->
                 <div>
-                    <img src="CSS/Img/Question.png" alt="Вопросы" style="width: 40px; height: 40px;">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style = "all:unset; border-radius: 50%; background-color:none;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 40px; height: 40px;"></button>
                 </div>
             </div>
             
@@ -96,6 +97,22 @@
                     </div>
                 </div>
             </footer>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style = "display: flex !important; justify-content:flex-end !important; left: 31rem; top:21rem;">
+            <div class="modal-content" style = "display: flex !important; justify-content: right !important;">
+                <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+            <p>Помощь</p>
+            <button type="button" class="btn btn-primary">Инструкция</button>
+            <button type="button" class="btn btn-primary">Что означают цвета?</button>
+            <button type="button" class="btn btn-primary">Опрос для тестирования</button>
+            <button type="button" class="btn btn-primary">Чат с оператором</button>
+                </div>
+            </div>
         </div>
     </div>
     
