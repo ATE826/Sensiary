@@ -85,3 +85,8 @@
         margin-bottom: 1rem;
     }
 }
+@media (width: 360px){
+    .point{
+        margin-left: -1rem;
+    } 
+}
