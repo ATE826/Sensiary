@@ -51,7 +51,7 @@
 
 @media (max-width: 720px) {
     .point{
-       margin-left: 0rem;
+       margin-left: -1rem;
     }
     .text{
         margin-left: 0rem;
