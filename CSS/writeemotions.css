@@ -8,6 +8,32 @@
     font-family: 'Unbounded', sans-serif;
 }
 
+.writeemotion-body, .writeemotion-content {
+    display: flexbox;
+    width: 450px !important;
+    height: 500px !important;
+    background-color: rgba(31, 38, 74, 1) !important;
+    color: white;
+    border-radius: 15px 15px 15px 15px !important;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.writeemotion-content {
+    top: 80px;
+}
+
+.emotion-name {
+    display: flex;
+    width: 100% !important;
+    height: 100px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    place-items: center !important;
+    border-radius: 5px;
+    font-size: 30px;
+
+}
+
 .modal-body {
     text-align: center !important;
     align-items: center !important;
@@ -45,8 +71,10 @@
     font-size: 13px !important;
 }
 
+
+
 .color:hover {
-    scale: 1.3;
-    transition: all 0.2s ease-out;
+    scale: 1.3 !important;
+    transition: all 0.2s ease-out !important;
 
 }
