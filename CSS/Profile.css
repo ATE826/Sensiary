@@ -24,6 +24,9 @@
     a.top-links{
         display: none !important;
     }
+    .hidden-navbar{
+        display: block !important;
+    }
     #profile-img{
         width: 75px !important;
         height: 75px !important;
