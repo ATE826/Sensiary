@@ -44,7 +44,7 @@
 @media (max-width: 720px) {
 
     .form-text{
-        font-size: 10pt !important;
+        font-size: 8pt !important;
     }
     .form-control{
         width: 1000px !important;
