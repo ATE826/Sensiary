@@ -20,6 +20,15 @@
     font-size: 32pt !important;
     color: var(--text-color) !important;
 }
+#isActive{
+    color: red !important;
+}
+#user{
+    font-size: 20pt !important;
+}
+#prof-login{
+    font-size: 40pt !important;
+}
 @media (max-width: 720px) {
     a.top-links{
         display: none !important;
@@ -45,5 +54,23 @@
     }
     #reg-window{
         height: 600px !important;
+    }
+    #user{
+        font-size: 10pt !important;
+    }
+    #prof-login{
+        font-size: 15pt !important;
+    }
+    #status, #isActive{
+        font-size: 10pt !important;
+    }
+    #subscribe{
+        width: 100% !important;
+    }
+    #status-line{
+        display: block;
+        white-space: normal; /* разрешает перенос текста */
+        text-align: right;
+        font-size: 20pt !important;
     }
 }
