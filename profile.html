@@ -22,7 +22,7 @@
             <div class="d-flex justify-content-between align-items-center w-100">
                 <!-- Круг слева -->
                 <div id="top">
-                    <div class="circle" style="width: 40px; height: 40px;"></div>
+                    <a href="#" onclick="window.location.href='index.html'"><div class="circle" style="width: 40px; height: 40px;"></div></a>
                 </div> 
                 <!-- Ссылки в центре -->
                 <div class="d-flex justify-content-around flex-grow-1">
@@ -40,10 +40,13 @@
         </header>
     </div>
     
-    <div class="container-fluid mt-5" id="head">
-        <main class="container">
+    <div class="container" id="head">
+        <div class="d-flex align-items-center justify-content-between" style="margin-top: -3rem;">
+            <a onclick="window.location.href='analysis.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color: #a6b1d1 !important;" href="#">&lt;-- Анализ</a>
+            <a onclick="window.location.href='writeEmotion.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color:#a6b1d1 !important" href="#">Запись --&gt;</a>
+        </div>
+        <main class="mt-5">
             <div class="row">
-                
                     <div class="col-2 d-flex" id="profile"><img id="profile-img" src="CSS/Img/PortfolioPhoto.png" style="width:145px; height: 145px;" alt=""></div>
                     <div class="col d-flex justify-content-start flex-column" id="subscribe" style="margin-left: -3rem;">
                         <p style="font-size: 20pt; color: #A6B1D1;">Пользователь</p>
