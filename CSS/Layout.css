@@ -19,6 +19,7 @@
 .button:hover {
     box-shadow: 0px 0px 0px 2px var(--text-color); /* Задаем цвет границы при наведении */
 }
+
 .circle {
     width: 30px !important;         
     height: 30px !important;
