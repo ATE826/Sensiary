@@ -11,6 +11,12 @@
 
 }
 
+.body-img{
+    background-image: url('Img/Wave.png'); /* Путь к вашему PNG */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    background-size: cover;
+}
+
 .light {
     --bg-body: var(--light-body);
     --bg-main: var(--light-main);
@@ -21,7 +27,7 @@
 
 .calendar {
     height: max-content !important;
-    width:960px !important;
+    width:900px !important;
     background-color: var(--bg-main);
     border-radius: 30px;
     padding: 20px;

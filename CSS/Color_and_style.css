@@ -155,24 +155,24 @@ button {
     margin-top: 30px;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
     border-radius: 27px;
-    margin-right: 50px;
+    margin-right: 30px;
     display: inline-block;
     justify-content: space-around;
-    height: 153px;
-    width: 288px;
     background-color: #1F264A;
     font-family: 'Comfortaa', sans-serif;
     font-size: 12pt;
     color: white;
     text-align: left;
-    padding-left: 20px !important;
-    padding-top: 10px;
+    padding: 20px;
+    margin-left: 32px;
+    width: 259px !important;
 }
 
 .stats_cubs {
     justify-content: center;
     text-align: center;
     align-items:center;
+    
 }
 
 .text-change{
