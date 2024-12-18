@@ -88,22 +88,13 @@
         width: 350px !important;
         height: 450px !important;
     }
-    /* Уменьшаем ширину кнопки аккордеона */
-    .dropdown-toggle {
-        width: 100px; /* или любой другой размер */
-        font-size: 6pt; /* уменьшение размера шрифта */
+    #filtermenu-normal{
+        display: none;
     }
-
-    /* Уменьшаем ширину меню */
-    .dropdown-menu {
-        min-width: 100px; /* или любой другой размер */
-        font-size: 6pt; /* уменьшение размера шрифта */
+    #filtermenu-adaptive{
+        display: flex !important;
+        justify-content: start;
+        flex-direction: column;
     }
-
-    /* Также можно уменьшить шрифт для текста внутри элементов меню */
-    .dropdown-item {
-        font-size: 6pt; /* уменьшение шрифта для элементов */
-    }
-
     
 }

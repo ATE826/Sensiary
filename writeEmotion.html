@@ -28,9 +28,9 @@
                 </div> 
                 <!-- Ссылки в центре -->
                 <div class="d-flex justify-content-around flex-grow-1">
-                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Профиль</a>
+                    <a onclick="window.location.href='profile.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Профиль</a>
                     <a class="d-flex align-items-center text-main" style="font-size: 25pt !important;" href="#">Запсиь</a>
-                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Анализ</a>
+                    <a onclick="window.location.href='analysis.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Анализ</a>
                 </div>
                 
                 <!-- Иконка справа -->
@@ -52,7 +52,44 @@
                 <div class = "container-fluid date" style="font-size: 20pt !important;" >
                     <script src="JS/date.js"></script>
                 </div>
-                <div class = "container-fluid filtermenu">
+                <div id="filtermenu-adaptive" style="display: none;">
+                    <div class="filtermenu">
+                        <div class="dropdown d-flex justify-content-start">
+                            <button style="margin-left: 17%;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            По направленности
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Направленные на себя</a></li>
+                                <li><a class="dropdown-item" href="#">Направленные на других</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filtermenu">
+                        <div class="dropdown d-flex justify-content-start">
+                            <button style="margin-left: 33%;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                По типу
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Положительные эмоции</a></li>
+                                <li><a class="dropdown-item" href="#">Отрицательные эмоции</a></li>
+                                <li><a class="dropdown-item" href="#">Нейтральные эмоции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filtermenu">
+                        <div class="dropdown d-flex justify-content-start">
+                            <button style="margin-left: 17%;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                По интенсивности
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Сильные эмоции</a></li>
+                                <li><a class="dropdown-item" href="#">Умеренные эмоции</a></li>
+                                <li><a class="dropdown-item" href="#">Слабые эмоции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "container-fluid filtermenu" id="filtermenu-normal">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         По направленности
@@ -127,6 +164,10 @@
             </div>
         </main>
     </div>
+
+    <footer>
+        <div class="d-flex justify-content-center" id="copyrated"><p>© Sensiary, 2024 г.</p></div>
+    </footer>
   
   <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

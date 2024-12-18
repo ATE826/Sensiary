@@ -31,76 +31,79 @@
                 <div class="d-flex justify-content-around flex-grow-1">
                     <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Запись</a>
                     <a class="d-flex align-items-center text-main" style="font-size: 25pt !important;" href="#">Анализ</a>
-                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Профиль</a>
+                    <a onclick="window.location.href='profile.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Профиль</a>
                 </div>
-                
                 <!-- Иконка справа -->
                 <div>
                     <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 50%; background-color: none; display: inline-block;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 35px; height: 35px;"></a>
                 </div>
-            </div>  
+            </div>
         </header>
     </div>
-    
+
     <div class = "container-fluid mt-5"></div>
-    <div style="margin-top: -2.2rem; display: none;" class="hidden-navbar">
-        <div class=" container d-flex align-items-center justify-content-between">
-            <a onclick="window.location.href='writeEmotion.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color: #a6b1d1 !important;" href="#">&lt;-- Запись</a>
-            <a onclick="window.location.href='profile.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color:#a6b1d1 !important" href="#">Профиль --&gt;</a>
-        </div>
-    </div>
-    
-    <div style="display: flex; justify-content: center; margin: 0;">
-        <div class="calendar container col-9 light mt-3">
-            <div class="calendar-header">
-                <span class="month-picker" id="month-picker">February</span>
-                <div class="year-picker">
-                    <span class="year-change" id="prev-year">
-                        <p></p>
-                    </span>
-                    <span id="year">2021</span>
-                    <span class="year-change" id="next-year">
-                        <p>></p>
-                    </span>
-                </div>
+        <div style="margin-top: -2.2rem; display: none;" class="hidden-navbar mb-2">
+            <div class=" container d-flex align-items-center justify-content-between">
+                <a onclick="window.location.href='writeEmotion.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color: #a6b1d1 !important;" href="#">&lt;-- Запись</a>
+                <a onclick="window.location.href='profile.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color:#a6b1d1 !important" href="#">Профиль --&gt;</a>
             </div>
-            <div class="calendar-body">
-                <div class="calendar-week-day">
-                    <div>Вск</div>
-                    <div>Пн</div>
-                    <div>Вт</div>
-                    <div>Ср</div>
-                    <div>Чт</div>
-                    <div>Пт</div>
-                    <div>Сб</div>
-                </div>
-                <div class="calendar-days"></div>
-            </div>
-            <div class="month-list"></div>
         </div>
-    </div>
-    
-    
+        <!--Календарь-->
+        <div id="calendar-size" class="row d-flex" style="margin-left: -2rem;">
+            <div class="calendar container col-9 light">
+                <div class="calendar-header">
+                    <span class="month-picker" id="month-picker">February</span>
+                    <div class="year-picker">
+                        <span class="year-change" id="prev-year">
+                            <p></p>
+                        </span>
+                        <span id="year">2021</span>
+                        <span class="year-change" id="next-year">
+                            <p>></p>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div>Вск</div>
+                        <div>Пн</div>
+                        <div>Вт</div>
+                        <div>Ср</div>
+                        <div>Чт</div>
+                        <div>Пт</div>
+                        <div>Сб</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+                <div class="month-list"></div>
+            </div>
+        </div>
+        
+
     <div class="container-fluid mt-5 stats_cubs">
-        <main class="container col-9 mt-5">
-            <div class="container mt-5">
-                <div class="stats_cube col-3">
+        <main class="container mt-5">
+            <!--Первый ряд-->
+            <div class="container mt-5 row d-flex justify-content-center"> 
+                <div class="stats_cube col-2">
                     <div id="write-stat">
                         <p>Вы создали запись</p>
                         <p id="wrire-create"><span id="writeNum">0</span> раз</p>
                     </div>
                 </div>
-                <div class="stats_cube col-3 ">
+                <div class="stats_cube col-2">
                     <p>Самый частый спектр</p>
                     <p id="wrire-create spectr"><span id="writeNum">Нет</span></p>
                 </div>
-                <div class="stats_cube col-3">
+                <div class="stats_cube col-2">
                     <p>Самый редкий спектр</p>
                     <p id="wrire-create spectr"><span id="writeNum">Нет</span></p>
                 </div>
             </div>
-            <div class="container mt-5">
-                <div class = "container-fluid row mt-5">
+            <!--Второй ряд-->
+            <div class="mt-2">
+                <div class="container mt-5 row" style="margin-left: -9.5rem;">
+                    
+                    <!--Баттарея-->
                     <div class="stats_cube col-3 container" >
                         <p>Энергия</p>
                         <div class="battery-container">
@@ -131,15 +134,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="stats_cube col-9" style = "width: 589px !important; height: 302px !important;">
+
+                    <!--Диаграмма-->
+                    <div class="stats_cube col-6" style = "width: 589px !important; height: 302px !important; margin-left: -16rem;">
                         <p class = "tracker">Трекер настроения</p>
                         <div class="graph-container container">
                             <div class="graph">
-                              <div class = "dashed"></div>
+                                <div class = "dashed"></div>
                                 <p class = "label-top">отлично</p>
                                 <p class = "label label-bottom">ужасно</p>
                             </div>
-                            <div class = "stable-container">
+                            <div class="stable-container">
                                 <div class = "stable negative" style = "height: 25px;"></div>
                                 <div class = "stable positive" style = "height: 70px;"></div>
                                 <div class = "stable positive" style = "height: 55px;"></div>
@@ -159,6 +164,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 
             </div>
@@ -168,14 +174,14 @@
         <div class="modal-dialog" style = "display: flex !important; justify-content:flex-end !important; left: 31rem; top:21rem;">
             <div class="modal-content" style = "display: flex !important; justify-content: right !important;">
                 <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-            <p>Помощь</p>
-            <button type="button" class="btn btn-primary">Инструкция</button>
-            <button type="button" class="btn btn-primary">Что означают цвета?</button>
-            <button type="button" class="btn btn-primary">Опрос для тестирования</button>
-            <button type="button" class="btn btn-primary">Чат с оператором</button>
+                    <p>Помощь</p>
+                    <button type="button" class="btn btn-primary">Инструкция</button>
+                    <button type="button" class="btn btn-primary">Что означают цвета?</button>
+                    <button type="button" class="btn btn-primary">Опрос для тестирования</button>
+                    <button type="button" class="btn btn-primary">Чат с оператором</button>
                 </div>
             </div>
         </div>
