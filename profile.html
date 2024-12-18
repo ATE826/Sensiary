@@ -49,18 +49,18 @@
         </div>
         <main class="mt-5">
             <div class="row">
-                    <div class="col-2 d-flex" id="profile"><img id="profile-img" src="CSS/Img/PortfolioPhoto.png" style="width:145px; height: 145px;" alt=""></div>
-                    <div class="col d-flex justify-content-start flex-column" id="subscribe" style="margin-left: -3rem;">
+                    <div class="col d-flex justify-content-center" id="profile"><img id="profile-img" src="CSS/Img/PortfolioPhoto.png" style="width:180px; height: 180px;" alt=""></div>
+                    <div class="col d-flex justify-content-end flex-column" id="subscribe" style="margin-left: -3rem;">
                         <p id="user" style="color: #A6B1D1;">Пользователь</p>
                         <p id="prof-login" style="font-size: 40pt; margin-top: -1rem;">user</p>
                         <div class="d-flex align-items-center">
                             <p id="status" style="color: #A6B1D1; font-size: 20pt; margin-top: -1rem;">Статус подписки: <span style="color: #FFF;" id="isActive">неактивирована</span></p>
                         </div>
                     </div>
-                    <div id="status-line" class="col d-flex align-items-top justify-content-end" style="text-align: right; font-size: 20pt;"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
-        
+                    <div class="col d-flex align-items-top justify-content-end" style="text-align: right; font-size: 20pt;" id="edit1"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
             </div>
-            <div class="container mt-5">
+            <div class="col" style="font-size: 20pt; display: none;" id="edit2"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
+            <div class="container mt-5 prof-fields">
                 <p class="profile-point">ФИО</p>
                 <p id="prof-name" class="profile-text">Name Name Name</p>
 
@@ -90,12 +90,12 @@
     <div class="container-fluid">
         <div class="row align-items-center-center" style="border-top: solid 1px #A6B1D1;">
             <footer class="mt-3 mb-3 ms-3 d-flex align-items-center">
-                <div class="col-1 d-flex justify-content-between">
-                    <a class="col-1" href="https://chatgpt.com/" target="_blank"><div><img src="CSS/Img/tg.png" alt="" style="width: 44px;"></div></a>
-                    <a class="col-1" href="https://vk.com/tonitsey" target="_blank"><div><img src="CSS/Img/vk.png" alt="" style="width: 44px;"></div></a>
+                <div class="col-2 d-flex align-items-center" id="prof-img-hrefs">
+                    <a class="col" href="https://chatgpt.com/" target="_blank"><div><img src="CSS/Img/tg.png" alt="" style="width: 44px;"></div></a>
+                    <a class="col" href="https://vk.com/tonitsey" target="_blank" id="vk-img"><div><img src="CSS/Img/vk.png" alt="" style="width: 44px;"></div></a>
                 </div>
                 <div class="col d-flex justify-content-end">
-                    <div class="d-flex justify-content-between me-5" style="width: 500px;">
+                    <div class="d-flex justify-content-between me-5" id="footer-text" style="width: 500px;">
                         <a href="#" class="a-blue" style="font-size: 16pt;">Политика конфиденциальности</a>
                         <a href="#" class="a-blue" style="font-size: 16pt;">Блог</a>
                     </div>
