@@ -24,96 +24,106 @@
             <div class="d-flex justify-content-between align-items-center w-100">
                 <!-- Круг слева -->
                 <div id="top">
-                    <div class="circle" style="width: 40px; height: 40px;"></div>
+                    <a href="#" onclick="window.location.href='index.html'"><div class="circle" style="width: 40px; height: 40px;"></div></a>
                 </div> 
                 <!-- Ссылки в центре -->
                 <div class="d-flex justify-content-around flex-grow-1">
-                    <a onclick="window.location.href='profile.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Профиль</a>
-                    <a class="d-flex align-items-center text-main" style="font-size: 25pt !important;" href="#">Запись</a>
-                    <a onclick="window.location.href='analysis.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Анализ</a>
+                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Профиль</a>
+                    <a class="d-flex align-items-center text-main" style="font-size: 25pt !important;" href="#">Запсиь</a>
+                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Анализ</a>
                 </div>
                 
                 <!-- Иконка справа -->
                 <div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style = "all:unset; border-radius: 50%; background-color:none;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 40px; height: 40px;"></button>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 50%; background-color: none; display: inline-block;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 35px; height: 35px;"></a>
                 </div>
-            </div>
-            
+            </div>  
         </header>
     </div>
-    <div class = "container-fluid date" style="font-size: 20pt !important;" >
-        <script src="JS/date.js"></script>
-    </div>
-    <div class = "container-fluid filtermenu">
-    <div class="dropdown ">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          По направленности
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Направленные на себя</a></li>
-          <li><a class="dropdown-item" href="#">Направленные на других</a></li>
-        </ul>
-    </div>
+    <div>
+        <main class="mt-5">
+            <div>
+                <div style="margin-top: -2.2rem; display: none;" class="hidden-navbar">
+                    <div class=" container d-flex align-items-center justify-content-between">
+                        <a onclick="window.location.href='profile.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color: #a6b1d1 !important;" href="#">&lt;-- Профиль</a>
+                        <a onclick="window.location.href='analysis.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color:#a6b1d1 !important" href="#">Анализ --&gt;</a>
+                    </div>
+                </div>
+                <div class = "container-fluid date" style="font-size: 20pt !important;" >
+                    <script src="JS/date.js"></script>
+                </div>
+                <div class = "container-fluid filtermenu">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        По направленности
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Направленные на себя</a></li>
+                            <li><a class="dropdown-item" href="#">Направленные на других</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            По типу
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Положительные эмоции</a></li>
+                            <li><a class="dropdown-item" href="#">Отрицательные эмоции</a></li>
+                            <li><a class="dropdown-item" href="#">Нейтральные эмоции</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            По интенсивности
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Сильные эмоции</a></li>
+                            <li><a class="dropdown-item" href="#">Умеренные эмоции</a></li>
+                            <li><a class="dropdown-item" href="#">Слабые эмоции</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            По типу
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Положительные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Отрицательные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Нейтральные эмоции</a></li>
-        </ul>
-    </div>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            По интенсивности
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Сильные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Умеренные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Слабые эмоции</a></li>
-        </ul>
-    </div>
-</div>
-
-    <div class="container col-12 cubs">
-            <div class="container-fluid mt-5 col-12 color-grid" >           
-                <button type="button" class="btn btn-primary color happy" data-emotion = "Счастливый" data-color = "red" data-bs-toggle="modal" data-bs-target="#exampleModal2" style = "all:unset; background-color:red !important;"></button>
-                <button type="button" class="btn btn-primary color sad" data-emotion = "Пошел нахуй" data-color = "blue" data-bs-toggle="modal" data-bs-target="#exampleModal2" style = "all:unset; background-color:blue !important;"></button>
-                <button class="color yellow"></button>
-                <button class="color yellow"></button>
-                <button class="color red"></button>
-                <button class="color red"></button>
-                <button class="color red"></button>
-                <button class="color red"></button>
-            
-                <button class="color yellow"></button>
-                <button class="color yellow"></button>
-                <button class="color yellow"></button>
-                <button class="color yellow"></button>
-                <button class="color red"></button>
-                <button class="color red"></button>
-                <button class="color red"></button>
-                <button class="color red"></button>
-            
-                <button class="color blue"></button>
-                <button class="color blue"></button>
-                <button class="color blue"></button>
-                <button class="color blue"></button>
-                <button class="color green"></button>
-                <button class="color green"></button>
-                <button class="color green"></button>
-                <button class="color green"></button>
-            
-                <button class="color blue"></button>
-                <button class="color blue"></button>
-                <button class="color blue"></button>
-                <button class="color blue"></button>
-                <button class="color green"></button>
-                <button class="color green"></button>
-                <button class="color green"></button>
-                <button class="color green"></button>
+                <div class="container col-12 cubs">
+                    <div class="container-fluid mt-5 col-12 color-grid" >           
+                        <button type="button" class="btn btn-primary color happy" data-emotion = "Счастливый" data-color = "red" data-bs-toggle="modal" data-bs-target="#exampleModal2" style = "all:unset; background-color:red !important;"></button>
+                        <button type="button" class="btn btn-primary color sad" data-emotion = "Пошел нахуй" data-color = "blue" data-bs-toggle="modal" data-bs-target="#exampleModal2" style = "all:unset; background-color:blue !important;"></button>
+                        <button class="color yellow"></button>
+                        <button class="color yellow"></button>
+                        <button class="color red"></button>
+                        <button class="color red"></button>
+                        <button class="color red"></button>
+                        <button class="color red"></button>
+                    
+                        <button class="color yellow"></button>
+                        <button class="color yellow"></button>
+                        <button class="color yellow"></button>
+                        <button class="color yellow"></button>
+                        <button class="color red"></button>
+                        <button class="color red"></button>
+                        <button class="color red"></button>
+                        <button class="color red"></button>
+                    
+                        <button class="color blue"></button>
+                        <button class="color blue"></button>
+                        <button class="color blue"></button>
+                        <button class="color blue"></button>
+                        <button class="color green"></button>
+                        <button class="color green"></button>
+                        <button class="color green"></button>
+                        <button class="color green"></button>
+                    
+                        <button class="color blue"></button>
+                        <button class="color blue"></button>
+                        <button class="color blue"></button>
+                        <button class="color blue"></button>
+                        <button class="color green"></button>
+                        <button class="color green"></button>
+                        <button class="color green"></button>
+                        <button class="color green"></button>
+                    </div>
+                </div>
             </div>
         </main>
     </div>

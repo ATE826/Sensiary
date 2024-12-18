@@ -49,15 +49,15 @@
         </div>
         <main class="mt-5">
             <div class="row">
-                    <div class="col d-flex justify-content-center" id="profile"><img id="profile-img" src="CSS/Img/PortfolioPhoto.png" style="width:180px; height: 180px;" alt=""></div>
-                    <div class="col d-flex justify-content-end flex-column" id="subscribe" style="margin-left: -3rem;">
-                        <p id="user" style="color: #A6B1D1;">Пользователь</p>
-                        <p id="prof-login" style="font-size: 40pt; margin-top: -1rem;">user</p>
-                        <div class="d-flex align-items-center">
-                            <p id="status" style="color: #A6B1D1; font-size: 20pt; margin-top: -1rem;">Статус подписки: <span style="color: #FFF;" id="isActive">неактивирована</span></p>
-                        </div>
+                <div class="col d-flex justify-content-center" id="profile"><img id="profile-img" src="CSS/Img/PortfolioPhoto.png" style="width:180px; height: 180px;" alt=""></div>
+                <div class="col d-flex justify-content-end flex-column" id="subscribe" style="margin-left: -3rem;">
+                    <p id="user" style="color: #A6B1D1;">Пользователь</p>
+                    <p id="prof-login" style="font-size: 40pt; margin-top: -1rem;">user</p>
+                    <div class="d-flex align-items-center">
+                        <p id="status" style="color: #A6B1D1; font-size: 20pt; margin-top: -1rem;">Статус подписки: <span style="color: #FFF;" id="isActive">неактивирована</span></p>
                     </div>
-                    <div class="col d-flex align-items-top justify-content-end" style="text-align: right; font-size: 20pt;" id="edit1"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
+                </div>
+                <div class="col d-flex align-items-top justify-content-end" style="text-align: right; font-size: 20pt;" id="edit1"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
             </div>
             <div class="col" style="font-size: 20pt; display: none;" id="edit2"><a onclick="window.location.href='profileEdit.html'" style="color: #A6B1D1 !important" href="#">редактировать<br>профиль</a></div>
             <div class="container mt-5 prof-fields">
@@ -103,23 +103,25 @@
             </footer>
         </div>
     </div>
+
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" style = "display: flex !important; justify-content:flex-end !important; left: 31rem; top:21rem;">
-            <div class="modal-content" style = "display: flex !important; justify-content: right !important;">
+        <div class="modal-dialog" style="transform: none !important;">
+            <div class="modal-content question-form-moving" style="left: 46rem; top: 24rem;">
                 <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-            <p>Помощь</p>
-            <button type="button" class="btn btn-primary">Инструкция</button>
-            <button type="button" class="btn btn-primary">Что означают цвета?</button>
-            <button type="button" class="btn btn-primary">Опрос для тестирования</button>
-            <button type="button" class="btn btn-primary">Чат с оператором</button>
+                    <p>Помощь</p>
+                    <button type="button" class="btn btn-primary">Инструкция</button>
+                    <button type="button" class="btn btn-primary">Что означают цвета?</button>
+                    <button type="button" class="btn btn-primary">Опрос для тестирования</button>
+                    <button type="button" class="btn btn-primary">Чат с оператором</button>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
     <!-- Подключение Bootstrap JS (новая версия) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

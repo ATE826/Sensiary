@@ -25,30 +25,38 @@
             <div class="d-flex justify-content-between align-items-center w-100">
                 <!-- Круг слева -->
                 <div id="top">
-                    <div class="circle" style="width: 40px; height: 40px;"></div>
+                    <a href="#" onclick="window.location.href='index.html'"><div class="circle" style="width: 40px; height: 40px;"></div></a>
                 </div> 
                 <!-- Ссылки в центре -->
                 <div class="d-flex justify-content-around flex-grow-1">
-                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Запись</a>
+                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Запись</a>
                     <a class="d-flex align-items-center text-main" style="font-size: 25pt !important;" href="#">Анализ</a>
-                    <a onclick="window.location.href='profile.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Профиль</a>
+                    <a onclick="window.location.href='writeEmotion.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side top-links" href="#">Профиль</a>
                 </div>
                 
                 <!-- Иконка справа -->
                 <div>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style = "all:unset; border-radius: 50%; background-color:none;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 40px; height: 40px;"></button>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 50%; background-color: none; display: inline-block;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 35px; height: 35px;"></a>
                 </div>
-            </div>    
+            </div>  
         </header>
     </div>
-
+    
     <div class = "container-fluid mt-5"></div>
-        <div class="calendar container col-9 light">
+    <div style="margin-top: -2.2rem; display: none;" class="hidden-navbar">
+        <div class=" container d-flex align-items-center justify-content-between">
+            <a onclick="window.location.href='writeEmotion.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color: #a6b1d1 !important;" href="#">&lt;-- Запись</a>
+            <a onclick="window.location.href='profile.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color:#a6b1d1 !important" href="#">Профиль --&gt;</a>
+        </div>
+    </div>
+    
+    <div style="display: flex; justify-content: center; margin: 0;">
+        <div class="calendar container col-9 light mt-3">
             <div class="calendar-header">
                 <span class="month-picker" id="month-picker">February</span>
                 <div class="year-picker">
                     <span class="year-change" id="prev-year">
-                        <p><</p>
+                        <p></p>
                     </span>
                     <span id="year">2021</span>
                     <span class="year-change" id="next-year">
@@ -70,9 +78,9 @@
             </div>
             <div class="month-list"></div>
         </div>
+    </div>
     
-        
-
+    
     <div class="container-fluid mt-5 stats_cubs">
         <main class="container col-9 mt-5">
             <div class="container mt-5">

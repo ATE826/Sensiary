@@ -82,3 +82,28 @@
     transition: all 0.2s ease-out !important;
 
 }
+
+@media (max-width: 720px) {
+    .writeemotion-body, .writeemotion-content {
+        width: 350px !important;
+        height: 450px !important;
+    }
+    /* Уменьшаем ширину кнопки аккордеона */
+    .dropdown-toggle {
+        width: 100px; /* или любой другой размер */
+        font-size: 6pt; /* уменьшение размера шрифта */
+    }
+
+    /* Уменьшаем ширину меню */
+    .dropdown-menu {
+        min-width: 100px; /* или любой другой размер */
+        font-size: 6pt; /* уменьшение размера шрифта */
+    }
+
+    /* Также можно уменьшить шрифт для текста внутри элементов меню */
+    .dropdown-item {
+        font-size: 6pt; /* уменьшение шрифта для элементов */
+    }
+
+    
+}

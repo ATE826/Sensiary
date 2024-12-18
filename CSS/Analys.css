@@ -120,3 +120,40 @@
     align-items:center;
     text-align: center;
 }
+
+@media (max-width: 720px) {
+    /* Уменьшаем общий размер календаря */
+    .calendar {
+        transform: scale(0.4);       /* Уменьшаем масштаб всего календаря */
+        transform-origin: top left;  /* Точка отсчета для масштабирования */
+    }
+
+    /* Уменьшаем размер шрифта для заголовка */
+    .calendar-header {
+        font-size: 16pt !important;
+    }
+
+    /* Уменьшаем размер шрифта для месяца и года */
+    .month-picker, .year-picker {
+        font-size: 16pt !important;
+    }
+
+    /* Уменьшаем размер текста для дней недели */
+    .calendar-week-day div {
+        margin-left: 2.5rem;
+        font-size: 16pt !important;
+        width: 50px !important;      /* Уменьшаем ширину ячеек */
+        height: 50px !important;     /* Уменьшаем высоту ячеек */
+        line-height: 10px !important;/* Центрируем текст */
+    }
+    /* Уменьшаем отступы для календаря */
+    .calendar-body {
+        padding: 0px !important;  /* Уменьшаем внутренние отступы */
+    }
+
+    /* Уменьшаем размер текста для дней */
+    .calendar-days {
+        font-size: 16pt !important;
+    }
+}
+
