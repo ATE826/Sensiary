@@ -1,4 +1,6 @@
-
+html, body {
+    overflow-x: hidden !important;
+}
 .body-img{
     background-image: url('Img/Wave.png'); /* Путь к вашему PNG */
     background-repeat: no-repeat; /* Запрещает повторение изображения */
