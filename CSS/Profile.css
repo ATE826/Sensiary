@@ -2,7 +2,7 @@ html, body {
     overflow-x: hidden !important;
 }
 .profile-text{
-    margin-top: -1.rem !important;
+    margin-top: -1rem !important;
     background-color: var(--bg-color) !important;
     color: var(--text-color) !important;
     font-size: 20pt !important;
@@ -45,6 +45,16 @@ html, body {
     }
     .prof-fields p{
         font-size: 10pt !important;
+    }
+    .prof-fields input{
+        width: 300px !important;
+    }
+    .inputline{
+        display: flex !important;
+        justify-content: center;
+    }
+    #confirmUncomfirm a{
+        font-size: 16pt !important;
     }
     #profile-img{
         width: 100px !important;
