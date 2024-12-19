@@ -45,6 +45,7 @@ generateCalendar = (month, year) => {
             }
         }
         calendar_days.appendChild(day)
+        day.style.background = getRandomGradient()
     }
 }
 
@@ -84,8 +85,29 @@ document.querySelector('#next-year').onclick = () => {
     generateCalendar(curr_month.value, curr_year.value)
 }
 
-let dark_mode_toggle = document.querySelector('.dark-mode-switch')
 
-dark_mode_toggle.onclick = () => {
-    document.querySelector('body').classList.toggle('light')
+
+// Генерация случайного градиента
+function getRandomGradient() {
+    const strings = ["#887F00", "#CAB701", "#FFEC01", "#FFF480", "#E24642", "#C8001A", "#940D14", "#780E12",
+        "#A89B00", "#E8D300", "#FFEF42", "#FFF9AC", "#F5AB9E", "#ED7769", "#E3001B", "#780E12",
+        "#057680", "#0099A1", "#67C3C2", "#97D1D2", "#CFE1B1", "#BBD480", "#940D14", "#780E12",
+        "#005459", "#00666B", "#008991", "#00ACB5", "#7AB51D", "#6CA11D", "#940D14", "#780E12",
+     ];
+    const color1 = getRandomString(strings);
+    const color2 = getRandomString(strings)
+    const angle = Math.floor(Math.random() * 360); // Угол градиента
+    return `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+}
+
+
+// Пример использования
+
+
+// Исходный массив строк
+
+// Функция для получения случайного элемента
+function getRandomString(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    return arr[randomIndex];
 }

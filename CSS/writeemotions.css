@@ -36,6 +36,12 @@
 
 .btn-write-emo {
     font-size: 16px !important;
+    width: max-content;
+    background-color: #31385E !important;
+}
+
+.btn-write-emo:hover {
+    background-color: #3C446F !important;
 }
 
 .modal-body {
@@ -80,5 +86,11 @@
 .color:hover {
     scale: 1.3 !important;
     transition: all 0.2s ease-out !important;
+}
 
+.color:hover::before {
+    scale: 1.3 !important;
+    transition: all 0.2s ease-out !important;
+    content: attr(data-emotion);
+    font-size: 11px;
 }

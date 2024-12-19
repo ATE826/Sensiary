@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись</title>
+    <link rel="stylesheet" href="CSS/Color_and_style.css">
+    <link rel="stylesheet" href="CSS/Layout.css">
+    <link rel="stylesheet" href="CSS/Profile.css">
+    <link rel="stylesheet" href="CSS/writeemotions.css">
+    <link rel="stylesheet" href="CSS/instruction.css">
+    <link rel="stylesheet" href="CSS/Points.css">
+    <link rel="icon" href="CSS/favicon.ico">
+    <!--Шрифы-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body class="body-img">
+    
+    <div class="container-fluid">
+        <header class="row align-items-center-center" style="border-bottom: solid 1px #A6B1D1; padding: 20px;">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <!-- Круг слева -->
+                <div id="top">
+                    <div class="circle" style="width: 40px; height: 40px;"></div>
+                </div> 
+                <!-- Ссылки в центре -->
+                <div class="d-flex justify-content-around flex-grow-1">
+                    <a onclick="window.location.href='profile.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Профиль</a>
+                    <a onclick="window.location.href='writeEmotion.html'" class="d-flex align-items-center text-side " style="font-size: 25pt !important; " href="#">Запись</a>
+                    <a onclick="window.location.href='analysis.html'" style="font-size: 20pt !important;" class="d-flex align-items-center text-side" href="#">Анализ</a>
+                </div>
+                
+                <!-- Иконка справа -->
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style = "all:unset; border-radius: 50%; background-color:none;"><img src="CSS/Img/Question2.png" alt="Вопросы" style="width: 40px; height: 40px;"></button>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+
+<div class="container cubs" >
+    <div style="margin-top: -3rem; display: none;" class="hidden-navbar">
+        <div class="d-flex align-items-center justify-content-between">
+            <a onclick="window.location.href='analysis.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color: #a6b1d1 !important;" href="#">&lt;-- Анализ</a>
+            <a onclick="window.location.href='writeEmotion.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color:#a6b1d1 !important" href="#">Запись --&gt;</a>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <main class="container-fluid">
+            <div class="row d-flex justify-content-center align-items-center ms-5">
+                <div id="main-point">
+                    <h2 style = "font-size: 30px !important; text-align: center;">Инструкция</h2>
+                    <div class="point" style = "margin-top: 6rem !important;"> 
+                        <div class="row mt-5 justify-content-center align-items-center">
+                            <!--Левый верхний-->
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-2"><div class="point-num"><p>1</p></div></div>
+                                    <div class="col">
+                                        <div class="point-text">
+                                            <div class="col">
+                                                <div class="point-text-head container">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex align-items-center justify-content-center" style = "text-align: center;"><p>Откройте страницу с записью эмоций</p></div>
+                                                    </div>
+                                                </div>
+                                                <div><p class="text-in-point">
+                                                    Нужно выбрать эмоцию, которая больше всего вам подходит. </p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Правый верхний-->
+                            <div class="col " id="point-2">
+                                <div class="row ">
+                                    <div class="col-2"><div class="point-num"><p>2</p></div></div>
+                                    <div class="col">
+                                        <div class="point-text">
+                                            <div class="col">
+                                                <div class="point-text-head container">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex align-items-center justify-content-center"><p>Комментарий</p></div>
+                                                    </div>
+                                                </div>
+                                                <div><p class="text-in-point">Когда эмоция выбрана, вы можете дополнить ее комментарием.</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        <div class="row" style="margin-top: 3rem;">
+            <div class="col justify-content-center align-items-center" style="text-align: center; " >
+                <button class="button" style = "width: 300px;">Нажмите "Записать"</button>
+            </div>       
+        </div>
+        <div class="row" style="margin-top: 3rem;">
+            <div class="col justify-content-center align-items-center" style="text-align: center; " >
+                <h2 style = "font-size: 30px !important; margin-top: 6rem !important; justify-content: center;">Анализ эмоционального состояния</h2>
+            </div>       
+        </div>
+
+        <div class="row">
+            <div class="container col-5 justify-content-left align-items-left" style="text-align: left; margin-top: 6rem;" >
+                <ul class="list-unstyled" style = "font-size: 20px; font-family: 'Comfortaa', sans-serif !important; color: white;">
+                    <li>&#9679; Перейдите в раздел "Анализ"</li>
+                    <li>&#9679; Посмотрите графики, отображающие динамику ваших эмоций за месяц.</li>
+                    <li>&#9679; Посмотрите статистику, которая выведет вам: наиболее часто и редко используемые вами спектры эмоций, количество ваших записей.</li>
+                    <li>&#9679; Посмотрите на календарь, каждый день которого отображает те эмоции, которые вы выбирали в ту дату.  Также вы можете поменять год и месяц в календаре.</li>
+                </ul>
+            </div>
+            <div class="container col-5 justify-content-left align-items-left" style="text-align: left; margin-top: 3rem;">
+                <div class = "stats_cube" style = "width: 420px !important; height: 240px !important;">
+                    <img src="CSS/Img/PointPict20.jpg" style = "width: 300; height: 200px; border-radius: 13px;"></div>
+                
+                <div class = "stats_cube" style = "width: 420px !important; height: 217px !important;">
+                    <img src="CSS/Img/PointPict21.png" style = "width: 300; height: 177px; border-radius: 13px;"></div>
+            </div>
+        </div>
+        
+    
+        </main>
+    </div>
+  
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style = "display: flex !important; justify-content:flex-end !important; left: 31rem; top:21rem;">
+            <div class="modal-content" style = "display: flex !important; justify-content: right !important;">
+                <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+            <p>Помощь</p>
+            <button type="button" class="btn btn-primary"><a href = "instruction.html">Инструкция</a></button>
+            <button type="button" class="btn btn-primary">Что означают цвета?</button>
+            <button type="button" class="btn btn-primary"><a href = "https://forms.gle/u4U39KKEt6unbLg87">Опрос для тестирования</a></button>
+            <button type="button" class="btn btn-primary">Чат с оператором</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content writeemotion-content" style = "display: flex !important; justify-content: right !important;">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body writeemotion-body">
+                    <div class = "emotion-name" id = "emotion-name" style = "text-align: center !important;"></div>
+                    <div class="form-group" style = "text-align: left !important; margin-top: 40px;">
+                        <label for="exampleFormControlTextarea1" style = "font-size: 16px; padding-bottom: 6px;">Комментарий</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" style = "background-color: #31385E; color: white; max-height: max-content;" rows="3"></textarea>
+                      </div>
+                </div>
+                <div class="modal-footer" style = "justify-content: center;">
+                    <button type="button" class="btn btn-primary btn-write-emo" data-bs-dismiss="modal" aria-label="Close">Записать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- Подключение Bootstrap JS (новая версия) -->
+    <script src="JS/filter.js"></script>
+    <script src="JS/write.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

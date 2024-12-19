@@ -66,7 +66,7 @@ button {
     margin: 50px;
 }
 .color-grid {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr);
     row-gap: 30px;
@@ -77,8 +77,8 @@ button {
     width: 100px !important;
     height: 100px !important;
     border-radius: 15px !important;
-    
 }
+
 .filtermenu {
     background-color:#1F264A;
     font-family: 'Comfortaa', sans-serif;

@@ -74,7 +74,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
-    color: var(--color-txt);
+    color: #31385E;
 }
 
 .calendar-days div {
@@ -87,6 +87,7 @@
     position: relative;
     cursor: pointer;
     animation: to-top 1s forwards;
+    border-radius: 15%;
     /* border-radius: 50%; */
 }
 
@@ -156,9 +157,10 @@
 
 .calendar-days div.curr-date,
 .calendar-days div.curr-date:hover {
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
+    background: var(--blue) !important;
     color: var(--white);
-    border-radius: 50%;
+    border-radius: 15%;
 }
 
 .calendar-days div.curr-date span {
