@@ -124,7 +124,7 @@
 @media (max-width: 720px) {
     /* Уменьшаем общий размер календаря */
     .calendar {
-        transform: scale(0.4);       /* Уменьшаем масштаб всего календаря */
+        transform: scale(0.75);       /* Уменьшаем масштаб всего календаря */
         transform-origin: top left;  /* Точка отсчета для масштабирования */
     }
 
@@ -155,18 +155,31 @@
     .calendar-days {
         font-size: 16pt !important;
     }
-.stats_cube{
-    margin-bottom: 1rem;
-}
+    .stats_cube{
+        margin-bottom: 1rem;
+    }
     #calendar-move{
         width: 800px !important;
     }
-    #first-row{
-        margin-top: -15rem;
-        margin-left: 0.2rem;
+    .stable-container{
+        margin-top: 0.3rem;
+    }
+    .stable{
+        width: 20px;
+        height: 26px;
+        margin-right: 1px;
+    }
+    #calendar-move{
+        width: 900px !important;
+        margin-left: 1.5rem !important;
+        margin-bottom: -8.5rem;
     }
     #second-row{
-        margin-left: 10rem !important;
+        margin-left: -0.65rem !important;
+        margin-top: 0rem !important;
+    }
+    #diagramm{
+        margin-left: 0rem !important;
     }
 }
 /*Surface Duo*/
