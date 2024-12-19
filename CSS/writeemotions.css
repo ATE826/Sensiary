@@ -34,6 +34,8 @@
 
 }
 
+
+
 .btn-write-emo {
     font-size: 16px !important;
     width: max-content;
@@ -117,6 +119,12 @@
         text-align: center !important;
         margin-top: auto !important;
         margin-bottom: auto !important;
+    }
+    .helper {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        top: auto !important;
+        left: auto !important;
     }
     
 }
