@@ -282,7 +282,7 @@
         font-size: 16pt !important;
     }
     .stable-container{
-        width: 560px !important;
+        margin-top: 0.3rem;
     }
     .stable{
         width: 10px;
