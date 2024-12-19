@@ -40,41 +40,92 @@
             </div>  
         </header>
     </div>
+    
+
+<div class="container cubs" >
+    <div style="margin-top: 1rem; display: none;" class="hidden-navbar">
+        <div class="d-flex align-items-center justify-content-between">
+            <a onclick="window.location.href='profile.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color: #a6b1d1 !important;" href="#">&lt;-- Профиль</a>
+            <a onclick="window.location.href='analysis.html'" style="font-family: 'Unbounded'; font-size: 10pt !important; color:#a6b1d1 !important" href="#">Анализ --&gt;</a>
+        </div>
+    </div>
+
+    <!--Фильтр меню-->
     <div class = "container-fluid date" style="font-size: 20pt !important;" >
         <script src="JS/date.js"></script>
     </div>
-    <div class = "container-fluid filtermenu">
-    <div class="dropdown ">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          По направленности
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Направленные на себя</a></li>
-          <li><a class="dropdown-item" href="#">Направленные на других</a></li>
-        </ul>
+    <div id="filtermenu-adaptive" style="display: none;">
+        <div class = "container-fluid filtermenu">
+            <div class="dropdown ">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                По направленности
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Направленные на себя</a></li>
+                <li><a class="dropdown-item" href="#">Направленные на других</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "container-fluid filtermenu">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    По типу
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Положительные эмоции</a></li>
+                    <li><a class="dropdown-item" href="#">Отрицательные эмоции</a></li>
+                    <li><a class="dropdown-item" href="#">Нейтральные эмоции</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "container-fluid filtermenu">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    По интенсивности
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Сильные эмоции</a></li>
+                    <li><a class="dropdown-item" href="#">Умеренные эмоции</a></li>
+                    <li><a class="dropdown-item" href="#">Слабые эмоции</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            По типу
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Положительные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Отрицательные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Нейтральные эмоции</a></li>
-        </ul>
+    <div class = "container-fluid filtermenu" id="filtermenu-normal">
+        <div class="dropdown ">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            По направленности
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Направленные на себя</a></li>
+            <li><a class="dropdown-item" href="#">Направленные на других</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                По типу
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Положительные эмоции</a></li>
+                <li><a class="dropdown-item" href="#">Отрицательные эмоции</a></li>
+                <li><a class="dropdown-item" href="#">Нейтральные эмоции</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                По интенсивности
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Сильные эмоции</a></li>
+                <li><a class="dropdown-item" href="#">Умеренные эмоции</a></li>
+                <li><a class="dropdown-item" href="#">Слабые эмоции</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            По интенсивности
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Сильные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Умеренные эмоции</a></li>
-            <li><a class="dropdown-item" href="#">Слабые эмоции</a></li>
-        </ul>
-    </div>
-</div>
 
 <div class="container cubs" >
     <div style="margin-top: -3rem; display: none;" class="hidden-navbar">
