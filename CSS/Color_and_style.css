@@ -197,4 +197,94 @@ button {
     h1{
         font-size: 45pt !important;
     }
+    .color-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+        grid-template-rows: repeat(8, 1fr); /* 8 строк */
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      .color {
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 15px !important;
+    }
+    .dropdown{
+        width: 300px !important;
+        font-size: 16pt !important;
+    }
+      
+}
+@media (max-width: 450px) {
+    .color-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+        grid-template-rows: repeat(8, 1fr); /* 8 строк */
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      .color {
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 15px !important;
+        
+    }
+      
+}
+@media (max-width: 431px) {
+    h1{
+        font-size: 45pt !important;
+    }
+    .color-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+        grid-template-rows: repeat(8, 1fr); /* 8 строк */
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      .color {
+        width: 80px !important;
+        height: 80px !important;
+        border-radius: 15px !important;
+        
+    }
+      
+}
+@media (max-width: 390px) {
+    h1{
+        font-size: 45pt !important;
+    }
+    .color-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+        grid-template-rows: repeat(8, 1fr); /* 8 строк */
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      .color {
+        width: 70px !important;
+        height: 70px !important;
+        border-radius: 15px !important;
+        
+    }
+      
+}
+@media (max-width: 360px) {
+    h1{
+        font-size: 45pt !important;
+    }
+    .color-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+        grid-template-rows: repeat(8, 1fr); /* 8 строк */
+        row-gap: 20px;
+        column-gap: 20px;
+      }
+      .color {
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 15px !important;
+        
+    }
+      
 }

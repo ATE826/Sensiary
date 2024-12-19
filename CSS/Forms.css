@@ -26,7 +26,7 @@
     border: none !important;
     text-align: center !important;
     align-items: center !important;
-    width: 146px !important;
+    width: 150px !important;
     height: 55px !important;
     border-radius: 20px !important;
 }
@@ -50,6 +50,11 @@
         width: 1000px !important;
     }
     #reg-btn{
-        font-size: 10pt !important;
+        font-size: 8pt !important;
+    }
+    .question-form-moving {
+        position: absolute !important;
+        left: 0rem !important;
+        top: 1rem !important;
     }
 }

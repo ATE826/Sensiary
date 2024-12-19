@@ -94,3 +94,19 @@
     content: attr(data-emotion);
     font-size: 11px;
 }
+
+@media (max-width: 720px) {
+    .writeemotion-body, .writeemotion-content {
+        width: 350px !important;
+        height: 450px !important;
+    }
+    #filtermenu-normal{
+        display: none;
+    }
+    #filtermenu-adaptive{
+        display: flex !important;
+        justify-content: start;
+        flex-direction: column;
+    }
+    
+}
