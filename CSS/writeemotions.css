@@ -4,7 +4,9 @@
     height: 398px !important;
     background-color: rgba(31, 38, 74, 1) !important;
     color: white;
-    border-radius: 20px 0px 0px 20px !important;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 0 !important;
+    
     font-family: 'Unbounded', sans-serif;
 }
 
@@ -121,9 +123,13 @@
         margin-bottom: auto !important;
     }
     .helper {
-        margin-top: auto !important;
-        margin-bottom: auto !important;
-        top: auto !important;
+        border-radius: 20px !important;
+        top: 20rem !important;
+        display: flex;
+        justify-content: center !important;
+        place-self: center !important;
+        align-items: center !important;
+        text-align: center !important;
         left: auto !important;
     }
     
