@@ -169,10 +169,11 @@
         margin-left: 10rem !important;
     }
 }
-@media (max-width: 431px) {
+/*Surface Duo*/
+@media (max-width: 541px) {
     /* Уменьшаем общий размер календаря */
     .calendar {
-        transform: scale(0.4);       /* Уменьшаем масштаб всего календаря */
+        transform: scale(0.635);       /* Уменьшаем масштаб всего календаря */
         transform-origin: top left;  /* Точка отсчета для масштабирования */
     }
 
@@ -203,11 +204,84 @@
     .calendar-days {
         font-size: 16pt !important;
     }
+    .stable-container{
+        margin-top: 0.3rem;
+    }
+    .stable{
+        width: 10px;
+        height: 26px;
+        margin-right: 1px;
+    }
     #calendar-move{
-        width: 1000px !important;
-        margin-left: -2rem !important;
+        margin-top: 2rem;
+        width: 800px !important;
+        margin-left: 1rem !important;
+        margin-bottom: 6.5rem !important;
+    }
+    #second-row{
+        margin-left: 0.2rem !important;
+        margin-top: 0rem !important;
+    }
+    #diagramm{
+        margin-left: 0rem !important;
     }
 }
+/*IPhone 14*/
+@media (max-width: 431px) {
+    /* Уменьшаем общий размер календаря */
+    .calendar {
+        transform: scale(0.5);       /* Уменьшаем масштаб всего календаря */
+        transform-origin: top left;  /* Точка отсчета для масштабирования */
+    }
+
+    /* Уменьшаем размер шрифта для заголовка */
+    .calendar-header {
+        font-size: 16pt !important;
+    }
+
+    /* Уменьшаем размер шрифта для месяца и года */
+    .month-picker, .year-picker {
+        font-size: 16pt !important;
+    }
+
+    /* Уменьшаем размер текста для дней недели */
+    .calendar-week-day div {
+        margin-left: 2.5rem;
+        font-size: 16pt !important;
+        width: 50px !important;      /* Уменьшаем ширину ячеек */
+        height: 50px !important;     /* Уменьшаем высоту ячеек */
+        line-height: 10px !important;/* Центрируем текст */
+    }
+    /* Уменьшаем отступы для календаря */
+    .calendar-body {
+        padding: 0px !important;  /* Уменьшаем внутренние отступы */
+    }
+
+    /* Уменьшаем размер текста для дней */
+    .calendar-days {
+        font-size: 16pt !important;
+    }
+    .stable-container{
+        margin-top: 0.3rem;
+    }
+    .stable{
+        width: 15px;
+        height: 26px;
+        margin-right: 1px;
+    }
+    #calendar-move{
+        width: 800px !important;
+        margin-left: 1rem !important;
+    }
+    #second-row{
+        margin-left: 0.2rem !important;
+        margin-top: 0rem !important;
+    }
+    #diagramm{
+        margin-left: 0rem !important;
+    }
+}
+/*IPhone 12 Pro*/
 @media (max-width: 391px) {
     /* Уменьшаем общий размер календаря */
     .calendar {
@@ -242,11 +316,27 @@
     .calendar-days {
         font-size: 16pt !important;
     }
+    .stable-container{
+        margin-top: 0.3rem;
+    }
+    .stable{
+        width: 10px;
+        height: 26px;
+        margin-right: 1px;
+    }
     #calendar-move{
-        width: 1000px !important;
-        margin-left: -2rem !important;
+        width: 900px !important;
+        margin-left: 1rem !important;
+    }
+    #second-row{
+        margin-left: 0.2rem !important;
+        margin-top: 0rem !important;
+    }
+    #diagramm{
+        margin-left: 0rem !important;
     }
 }
+/*Samsung S22*/
 @media (max-width: 361px) {
     /* Уменьшаем общий размер календаря */
     .calendar {
