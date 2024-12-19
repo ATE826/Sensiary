@@ -115,14 +115,14 @@
         flex-direction: column;
     }
     .modal-dialog {
-        top: 25%;
+        top: 23%;
         display: flex;
         justify-content: center !important;
         place-self: center !important;
         align-items: center !important;
         text-align: center !important;
-        padding-top: auto !important;
-        padding-bottom: auto !important;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
     }
     
 }
