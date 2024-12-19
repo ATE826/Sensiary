@@ -282,14 +282,19 @@
         font-size: 16pt !important;
     }
     .stable-container{
-        width: 300px !important;
+        width: 560px !important;
+    }
+    .stable{
+        width: 10px;
+        height: 26px;
+        margin-right: 1px;
     }
     #calendar-move{
         width: 800px !important;
         margin-left: 1.5rem !important;
     }
     #second-row{
-        margin-left: 0rem !important;
+        margin-left: 0.2rem !important;
         margin-top: 0rem !important;
     }
     #diagramm{
