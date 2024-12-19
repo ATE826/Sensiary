@@ -124,11 +124,12 @@
     }
     .helper {
         border-radius: 20px !important;
-        top: 20rem !important;
-        display: flex;
+        top: 15rem !important;
+        display: flexbox;
         justify-content: center !important;
         place-self: center !important;
         align-items: center !important;
+        place-items: center;
         text-align: center !important;
         left: auto !important;
     }

@@ -30,7 +30,7 @@ function SetDataFromForm() {
 
 function handleRegistration() {
     GetFormData();
-    window.location.href = 'profile.html';
+    window.location.href = 'writeEmotion.html';
 }
 
 window.addEventListener('DOMContentLoaded', SetDataFromForm);
