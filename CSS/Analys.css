@@ -281,9 +281,19 @@
     .calendar-days {
         font-size: 16pt !important;
     }
+    .stable-container{
+        width: 300px !important;
+    }
     #calendar-move{
         width: 800px !important;
         margin-left: 1.5rem !important;
+    }
+    #second-row{
+        margin-left: 0rem !important;
+        margin-top: 0rem !important;
+    }
+    #diagramm{
+        margin-left: 0rem !important;
     }
 }
 @media (max-width: 321px) {
@@ -319,9 +329,5 @@
     /* Уменьшаем размер текста для дней */
     .calendar-days {
         font-size: 16pt !important;
-    }
-    #calendar-move{
-        width: 800px !important;
-        margin-left: 0rem !important;
     }
 }
