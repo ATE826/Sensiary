@@ -213,6 +213,16 @@ button {
         width: 300px !important;
         font-size: 16pt !important;
     }
+    .helper {
+        border-radius: 20px !important;
+        top: 20rem !important;
+        display: flex;
+        justify-content: center !important;
+        place-self: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        left: auto !important;
+    }
       
 }
 @media (max-width: 450px) {
