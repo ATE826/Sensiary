@@ -93,6 +93,10 @@ button {
     border: none !important;
 }
 
+.btn-help:hover {
+    background-color: #31385E !important;
+}
+
 .dropdown-menu {
     background-color: #1F264A !important;
 }
