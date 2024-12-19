@@ -18,8 +18,14 @@
     font-family: 'Comfortaa', sans-serif;
 }
 
+
+
 .writeemotion-content {
     top: 80px;
+}
+
+.modal-dialog {
+    top: 20%;
 }
 
 .emotion-name {
@@ -50,7 +56,7 @@
     justify-content: center !important;
 }
 
-.modal-content, .modal-dialog {
+.modal-content {
     justify-content: right !important;
 }
 
@@ -107,6 +113,16 @@
         display: flex !important;
         justify-content: start;
         flex-direction: column;
+    }
+    .modal-dialog {
+        top: 25%;
+        display: flex;
+        justify-content: center !important;
+        place-self: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding-top: auto !important;
+        padding-bottom: auto !important;
     }
     
 }
