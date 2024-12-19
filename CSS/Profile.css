@@ -43,18 +43,24 @@ html, body {
     .hidden-navbar{
         display: block !important;
     }
+    .vyiti {
+        font-size: 10pt !important;
+    }
     .prof-fields p{
         font-size: 10pt !important;
     }
     .prof-fields input{
         width: 300px !important;
     }
+    #exit{
+        font-size: 10pt !important;
+    }
     .inputline{
         display: flex !important;
         justify-content: center;
     }
     #confirmUncomfirm a{
-        font-size: 16pt !important;
+        font-size: 10pt !important;
     }
     #profile-img{
         width: 100px !important;
