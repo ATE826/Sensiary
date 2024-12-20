@@ -288,11 +288,12 @@ button {
     }
       
 }
-@media (max-width: 360px) {
+@media (max-width: 361px) {
     h1{
         font-size: 45pt !important;
     }
     .color-grid {
+        margin-left: -1rem !important;
         display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 колонки */
         grid-template-rows: repeat(8, 1fr); /* 8 строк */

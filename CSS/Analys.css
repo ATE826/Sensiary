@@ -476,6 +476,9 @@
     #diagramm{
         margin-left: 0rem !important;
     }
+    #main-point{
+        margin-top: 18rem !important;
+    }
 }
 @media (max-width: 321px) {
     /* Уменьшаем общий размер календаря */
