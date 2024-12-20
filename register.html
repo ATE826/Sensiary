@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="CSS/Color_and_style.css">
+    <link rel="icon" href="CSS/favicon.ico">
+    <link rel="icon" href="CSS/register.css">
+    <link rel="stylesheet" href="CSS/Forms.css">
+    <!--Шрифы-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style = "background-image: url(CSS/Img/auth.png); background-size: 100% 100%; background-repeat: no-repeat; background-size: cover;">
+    <form action="/register" method="post" class="container" style="display:flexbox;justify-content: center !important; text-align:center!important; align-items:center!important; border-radius: 33px;">
+        <h2 style="text-align: center; font-size: 30pt !important; margin-top: 10% !important;">Регистрация</h2>
+        <div class="d-flex row mt-5 justify-content-center">
+            <input id="reg-login" type="text" placeholder="Логин" class="form-control my-2 w-50 form-text">
+        </div>
+        <div class="d-flex row mt-2 justify-content-center">
+            <input id="reg-password" type="password" placeholder="Пароль" class="form-control my-2 w-50 form-text">
+        </div>
+<!--        <div class="d-flex row mt-2 justify-content-center">-->
+<!--            <input id="reg-phone" type="text" placeholder="Телефон" class="form-control my-2 w-50 form-text">-->
+<!--        </div>-->
+<!--        <div class="d-flex row mt-2 justify-content-center">-->
+<!--            <input id="reg-mail" type="mail" placeholder="Адрес эл. почты" class="form-control my-2 w-50 form-text">-->
+<!--        </div>-->
+<!--        <div class="d-flex row mt-2 justify-content-center">-->
+<!--            <input id="reg-date" type="date" placeholder="" style="color: #A6B1D1 !important" class="form-control my-2 w-50 form-text">-->
+<!--        </div>-->
+        <div class="d-flex justify-content-center mt-5">
+            <button type="button" id="reg-btn" class="btn btn-primary form-btn w-50">Зарегистрироваться</button>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: -4rem;"><p class="text-areYouShure">Уже есть аккаунт? <span><a href="#" data-bs-toggle="modal" data-bs-target="#modal-window" data-bs-dismiss="modal">Войти</a></span></p></div>     
+    </form>
+</body>
+
+<script>
+    const submitButttom = document.getElementById('reg-btn');
+    submitButttom.addEventListener('click',()=>{
+        const name = document.getElementById('reg-login').value;
+        const password = document.getElementById('reg-password').value;
+        //const confirmPassword = document.getElementById('passwordcon').value;
+        //const email = document.getElementById('email').value;
+        const data = {
+            name,
+            //email,
+            password
+        }
+        console.log(data);
+
+        //if(password == confirmPassword){
+        if(true){
+            const jsonData = JSON.stringify(data);
+            fetch('/register', {
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body: jsonData
+            })
+                .then(response =>{
+                    if(response.status == 200){
+                        alert('succesfull');
+                    }
+                })
+        }
+
+    })
+
+</script>
+
+
+</html>
