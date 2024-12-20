@@ -72,6 +72,18 @@
     #point-2, #point-4{
         margin-top: 3rem;
     }
+    
+    /* Для полной центровки */
+    .full-page-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20rem; 
+        margin-left: -2.5rem;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
 }
 @media (max-width: 400px){
     .point-text{

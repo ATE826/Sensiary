@@ -129,6 +129,15 @@ html, body {
     #questions{
         margin-left: 0rem !important;
     }
+    .expansion{
+        width: 100% !important;
+    }
+    .expansion-img{
+        display: flex;
+        justify-content: center;
+        margin-left: -20%;
+        width: 110%;
+    }
 }
 @media (max-width: 400px){
     .nav-link{

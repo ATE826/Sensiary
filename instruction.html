@@ -26,7 +26,7 @@
             <div class="d-flex justify-content-between align-items-center w-100">
                 <!-- Круг слева -->
                 <div id="top">
-                    <div class="circle" style="width: 40px; height: 40px;"></div>
+                    <a href="#" onclick="window.location.href='index.html'"><div class="circle" style="width: 40px; height: 40px;"></div></a>
                 </div> 
                 <!-- Ссылки в центре -->
                 <div class="d-flex justify-content-around flex-grow-1">
@@ -52,89 +52,89 @@
     </div>
 
     <div class="container-fluid mt-5">
-        <main class="container-fluid">
-            <div class="row d-flex justify-content-center align-items-center ms-5">
-                <div id="main-point">
-                    <div class="point" style = "margin-top: 6rem !important;"> 
-                        <div class="row mt-5 justify-content-center align-items-center">
-                            <!--Левый верхний-->
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-2"><div class="point-num"><p>1</p></div></div>
-                                    <div class="col">
-                                        <div class="point-text">
-                                            <div class="col">
-                                                <div class="point-text-head container">
-                                                    <div class="row">
-                                                        <div class="col-12 d-flex align-items-center justify-content-center" style = "text-align: center;"><p>Откройте страницу с записью эмоций</p></div>
+        <main>
+            <div class="full-page-center">
+                <div class="row d-flex justify-content-center align-items-center ms-5">
+                    <div id="main-point">
+                        <div class="point" style="margin-top: 6rem !important;">
+                            <div class="row mt-5 justify-content-center align-items-center">
+                                <!-- Левый верхний -->
+                                <div class="col inst-pointers">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="point-num"><p>1</p></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="point-text">
+                                                <div class="col">
+                                                    <div class="point-text-head container">
+                                                        <div class="row">
+                                                            <div class="col-12 d-flex align-items-center justify-content-center" style="text-align: center;">
+                                                                <p>Откройте страницу с записью эмоций</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                    <div><p class="text-in-point">Нужно выбрать эмоцию, которая больше всего вам подходит.</p></div>
                                                 </div>
-                                                <div><p class="text-in-point">
-                                                    Нужно выбрать эмоцию, которая больше всего вам подходит. </p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Правый верхний -->
+                                <div class="col" id="point-2">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="point-num"><p>2</p></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="point-text">
+                                                <div class="col">
+                                                    <div class="point-text-head container">
+                                                        <div class="row">
+                                                            <div class="col-12 d-flex align-items-center justify-content-center">
+                                                                <p>Комментарий</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div><p class="text-in-point">Когда эмоция выбрана, вы можете дополнить ее комментарием.</p></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--Правый верхний-->
-                            <div class="col " id="point-2">
-                                <div class="row ">
-                                    <div class="col-2"><div class="point-num"><p>2</p></div></div>
-                                    <div class="col">
-                                        <div class="point-text">
-                                            <div class="col">
-                                                <div class="point-text-head container">
-                                                    <div class="row">
-                                                        <div class="col-12 d-flex align-items-center justify-content-center"><p>Комментарий</p></div>
-                                                    </div>
-                                                </div>
-                                                <div><p class="text-in-point">Когда эмоция выбрана, вы можете дополнить ее комментарием.</p></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
-        <div class="row" style="margin-top: 3rem;">
-            <div class="col justify-content-center align-items-center" style="text-align: center; " >
-                <button class="button" style = "width: 300px;">Нажмите "Записать"</button>
-            </div>       
-        </div>
-        <div class="row" style="margin-top: 3rem;">
-            <div class="col justify-content-center align-items-center" style="text-align: center; " >
+            
+            <div class="row d-flex justify-content-center align-items-center" style="margin-top: 3rem;">
+                <button class="button" style = "width: 300px;">Нажмите "Записать"</button>      
+            </div>
+            <div class="row d-flex justify-content-center align-items-center" style="margin-top: 3rem;">
                 <h2 style = "font-size: 30px !important; margin-top: 6rem !important; justify-content: center;">Анализ эмоционального состояния</h2>
-            </div>       
-        </div>
+            </div>
 
-        <div class="row">
-            <div class="container col-5 justify-content-left align-items-left" style="text-align: left; margin-top: 6rem;" >
-                <ul class="list-unstyled" style = "font-size: 20px; font-family: 'Comfortaa', sans-serif !important; color: white;">
-                    <div class = "row">
+            <div class="row">
+                <div class="container col-6 justify-content-left align-items-left expansion" style="text-align: left; margin-top: 6rem;">
+                    <ul class="list-unstyled" style = "font-size: 20px; font-family: 'Comfortaa', sans-serif !important; color: white;">                       
                         <li>&#9679; Перейдите в раздел "Анализ"</li>
-                        
+                        <li>&#9679; Посмотрите графики, отображающие динамику ваших эмоций за месяц.</li>
+                        <li>&#9679; Посмотрите статистику, которая выведет вам: наиболее часто и редко используемые вами спектры эмоций, количество ваших записей.</li>
+                        <li>&#9679; Посмотрите на календарь, каждый день которого отображает те эмоции, которые вы выбирали в ту дату.  Также вы можете поменять год и месяц в календаре.</li>
+                    </ul>
+                </div>
+                <div class="container col-5 expansion ms-5" style="text-align: left; margin-top: 3rem;">
+                    <div class="d-flex justify-content-center" style="flex-direction: column !important;">
+                        <img class="expansion-img" src="CSS/Img/PointPict20.jpg" style = "width: 300; height: 200px; border-radius: 23px; border: 20px solid #1F264A">
+                        <img class="expansion-img mt-3" src="CSS/Img/PointPict21.png" style = "width: 300; height: 182px; border-radius: 23px; border: 20px solid #1F264A">
                     </div>
-                    
-                    <li>&#9679; Посмотрите графики, отображающие динамику ваших эмоций за месяц.</li>
-                    <li>&#9679; Посмотрите статистику, которая выведет вам: наиболее часто и редко используемые вами спектры эмоций, количество ваших записей.</li>
-                    <li>&#9679; Посмотрите на календарь, каждый день которого отображает те эмоции, которые вы выбирали в ту дату.  Также вы можете поменять год и месяц в календаре.</li>
-                </ul>
+                </div>
             </div>
-            <div class="container col-5 justify-content-left align-items-left" style="text-align: left; margin-top: 3rem;">
-                <div class = "stats_cube" style = "width: 420px !important; height: 240px !important;">
-                    <img src="CSS/Img/PointPict20.jpg" style = "width: 300; height: 200px; border-radius: 13px;"></div>
-                
-                <div class = "stats_cube" style = "width: 420px !important; height: 217px !important;">
-                    <img src="CSS/Img/PointPict21.png" style = "width: 300; height: 177px; border-radius: 13px;"></div>
-            </div>
-        </div>
-        
-    
+            <div class="d-flex justify-content-center mt-3" id="copyrated"><p>© Sensiary, 2024 г.</p></div>
         </main>
     </div>
+
   
   <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
