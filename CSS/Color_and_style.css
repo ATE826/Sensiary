@@ -172,6 +172,10 @@ button {
     width: 259px !important;
 }
 
+.btn-nav:hover {
+    background-color: #3C446F !important;
+}
+
 .stats_cubs {
     justify-content: center;
     text-align: center;
